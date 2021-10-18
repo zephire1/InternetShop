@@ -1,0 +1,79 @@
+<div class="bundles">
+
+  @@if (cooming) {
+
+    @@include('./SectionTitle.html', {
+      prifix: 'coming soon...',
+      sufix: 'Our Magic Bundles',
+      center: true
+    })
+
+  }
+  @@if (!cooming) {
+
+    @@include('./SectionTitle.html', {
+      prifix: '',
+      sufix: 'Our Magic Bundles',
+      center: true
+    })
+
+  }
+
+  <div class="bundles__items">
+
+    @@if (!cooming) {
+
+      @@include('./ProductCard.html', {
+        img: './assets/bundles/bundle1.png',
+        title: 'F*UCK LATE NIGHTS w ashwagandha & catnip Chaga mushroom Beeswax & Propolis Salve',
+        reviews: 13,
+        price: 99
+      })
+      @@include('./ProductCard.html', {
+        img: './assets/bundles/bundle2.png',
+        title: 'Comfrey & Arnica Muscle and Joints Salve Dandelion Leafs Mumiyo Altai',
+        reviews: 350,
+        price: 89
+      })
+      @@include('./ProductCard.html', {
+        img: './assets/bundles/bundle3.png',
+        title: 'Chamomile flowers Mumiyo Altai',
+        reviews: 389,
+        price: 49
+      })
+
+    }
+
+    @@if (cooming) {
+
+      <div class="bundles__items-coomingBlock">
+        <img class="bundles__items-cooming" src="./assets/cooming.png" alt="comming" loading="lazzy" width="100%" />
+        <br><br>
+        <span class="bundles__items-coomingText">Be the first to know when we are launching our Magic Bundles!</span>
+      </div>
+
+    }
+
+  </div>
+
+  <div class="bundles__button">
+
+    @@if (!cooming) {
+
+      @@include('./Button.html', {
+        text: 'PRODUCTS TO heal >',
+        type: 'orange'
+      })
+
+    }
+
+    @@if (cooming) {
+
+      @@include('./Button.html', {
+        text: 'Go to profile',
+        type: 'orange'
+      })
+
+    }
+  </div>
+</div>

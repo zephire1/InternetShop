@@ -1,0 +1,8 @@
+<div class="rowItems">
+  @@for (var i = 0; i < items.length; i++) {
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=`+items[i].img+` /></div>
+      <p class="rowItems__item-text rowItems__item-text--`+items[i].color+`">`+items[i].text+`</p>
+    </div>
+  }
+</div>

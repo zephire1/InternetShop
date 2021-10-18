@@ -1,0 +1,16 @@
+@mixin sliderDots()
+  position: absolute
+  bottom: 3.2142rem
+  width: 100%
+  display: flex
+  justify-content: center
+  @media ( max-width: $mobile )
+    bottom: -30px
+  button
+    width: 0.7142rem
+    height: 0.7142rem
+    border-radius: 100%
+    background: $Buttons_RadioButton!important
+    margin: 0 0.4285rem
+    &.active
+      background: $Font_DarkGreen!important

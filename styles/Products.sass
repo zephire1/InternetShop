@@ -1,0 +1,23 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.products
+  margin: 3.5428rem 10rem 0 10rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media ( max-width: $mobile )
+    margin: 70px 20px 0 20px
+
+  &__items
+    display: flex
+    grid-gap: 7.5714rem
+    @media ( max-width: $mobile )
+      flex-wrap: wrap
+      grid-gap: 30px 20px
+      justify-content: center
+
+  &__button
+    margin-top: 4.0714rem
+
+    

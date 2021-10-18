@@ -1,0 +1,36 @@
+@@include('./SectionTitle.html', {
+  prifix: '',
+  sufix: 'New Arrival',
+  center: true
+})
+<div class="newArrival">
+  <div class="newArrival__preview" style="background-image: url(@@img);"></div>
+  <div class="newArrival__content">
+
+    <div>
+      <h1 class="newArrival__content-title">@@title</h1>
+      <div class="newArrival__content-edition">@@edition</div>
+      <div class="newArrival__content-size">@@size</div>
+      <div class="newArrival__content-reviews">@@reviews Reviews</div>
+    </div>
+
+    <div class="newArrival__content-footer">
+      <h2 class="newArrival__content-price">@@price</h2>
+      @@include('./Counter.html', {
+        id: 'arrival-1'
+      })
+      
+      <div class="newArrival__content-btn">
+        @@include('./Button.html', {
+          text: 'Add to cart',
+          type: 'orange'
+        })
+        @@include('./Link.html', {
+          url: '#',
+          text: 'View product details >'
+        })
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.counter {
+  padding: 0.5714rem 0.9285rem;
+  border: 0.0714rem solid #E5EAED;
+  display: flex;
+  align-items: center;
+  grid-gap: 0.7857rem;
+  height: 1.8571rem;
+}
+
+.counter__btn {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.counter__text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  border: none;
+  width: 0.7142rem;
+  outline: none;
+  color: #4F5544;
+}

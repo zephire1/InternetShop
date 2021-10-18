@@ -1,0 +1,42 @@
+.FAQitem {
+  margin-bottom: 40px;
+}
+
+.FAQitem__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.4285rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #4F5544;
+  border-bottom: 0.0714rem solid #E5EAED;
+  padding-bottom: 0.7142rem;
+}
+
+.FAQitem__top-button {
+  transition: .3s;
+}
+
+.FAQitem__top-button.active {
+  transform: rotate(-45deg);
+}
+
+.FAQitem__bottom {
+  width: 81%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.4285rem;
+  color: rgba(79, 85, 68, 0.8);
+  display: none;
+}
+
+.FAQitem__bottom.active {
+  display: block;
+}

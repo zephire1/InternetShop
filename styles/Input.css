@@ -1,0 +1,42 @@
+.input {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input__label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4F5544;
+  position: absolute;
+  left: 13px;
+  top: -7px;
+}
+
+.input__field {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #E5EAED;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.input__field::placeholder {
+  color: #4F5544;
+  opacity: .5;
+}
+
+.input__special {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4F5544;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}

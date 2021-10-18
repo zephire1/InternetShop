@@ -1,0 +1,128 @@
+.newArrival {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5428rem;
+}
+
+@media (max-width: 425px) {
+  .newArrival {
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    margin: 4.5428rem auto;
+  }
+}
+
+.newArrival__preview {
+  width: 33rem;
+  height: 29.0714rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 425px) {
+  .newArrival__preview {
+    width: 208px;
+    height: 212px;
+  }
+}
+
+.newArrival__content {
+  margin-left: 6.7857rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .newArrival__content {
+    margin-left: 2.2857rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .newArrival__content {
+    margin-left: unset;
+  }
+}
+
+.newArrival__content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newArrival__content-footer .counter {
+  margin: 0.2142rem 0 1rem 0;
+}
+
+.newArrival__content-title {
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.4285rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+  color: #99A287;
+}
+
+@media (max-width: 425px) {
+  .newArrival__content-title {
+    font-size: 23px;
+    line-height: 20px;
+    margin-top: 11px;
+  }
+}
+
+.newArrival__content-edition {
+  margin-top: 0.7857rem;
+}
+
+.newArrival__content-edition, .newArrival__content-size, .newArrival__content-reviews {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6428rem;
+  letter-spacing: 0.0714rem;
+  color: #4F5544;
+}
+
+.newArrival__content-reviews {
+  margin-top: 0.0928rem;
+  font-size: 0.6428rem;
+  line-height: 0.7142rem;
+}
+
+@media (max-width: 425px) {
+  .newArrival__content-reviews {
+    font-size: 7px;
+    line-height: 10px;
+  }
+}
+
+.newArrival__content-price {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9285rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1857rem;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .newArrival__content-price {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.newArrival__content-btn {
+  text-align: center;
+}
+
+.newArrival__content-btn button {
+  width: 100%;
+  margin-bottom: 1.0714rem;
+}

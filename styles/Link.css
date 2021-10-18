@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6428rem;
+  letter-spacing: 0.0714rem;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,55 @@
+.bundles {
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .bundles {
+    margin: 0 20px;
+  }
+}
+
+.bundles__items {
+  display: flex;
+  grid-gap: 7.5714rem;
+  margin-top: 5.1428rem;
+}
+
+@media (max-width: 425px) {
+  .bundles__items {
+    margin-top: 10px;
+  }
+}
+
+.bundles__items .productCard {
+  width: 50%;
+}
+
+.bundles__items-coomingBlock {
+  text-align: center;
+}
+
+.bundles__items-coomingText {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2142rem;
+  line-height: 1.4285rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .bundles__items-coomingText {
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.bundles__button {
+  margin-top: 4.0714rem;
+}

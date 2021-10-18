@@ -1,0 +1,33 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.mobileFlyCart
+  position: fixed
+  right: 20px
+  top: 50px
+  display: none
+  justify-content: center
+  align-items: center
+  z-index: 3
+  width: 46px
+  height: 46px
+  border: 1px solid $MainGreen
+  background: $Background
+  border-radius: 100%
+
+  @media ( max-width: $mobile )
+    display: flex
+
+  &-img
+  &-count
+    font-family: 'Roboto', sans-serif
+    position: absolute
+    left: 28px
+    top: 11px
+    font-style: normal
+    font-weight: 600
+    font-size: 9px
+    line-height: 7px
+    letter-spacing: 2.6px
+
+    color: $Font_DarkGreen

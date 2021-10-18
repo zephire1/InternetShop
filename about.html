@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+
+    <section class="section__aboutSite">
+      <div class="banner2" style="background-image: url(../assets/banner.png)">
+        <h1 class="banner2__text">We stand for healthy<br/>and beautiful generation</h1>
+      </div>
+
+      @@include('./components/About.html')
+
+      @@include('./components/OurPromise.html')
+
+      <div class="cards">
+        @@include('./components/RowItems.html', {
+          items: [{
+            color: 'green',
+            img: './assets/benefits/benefits1.png',
+            text: 'We choose only the highest<br/>quality ingredients'
+          },{
+            color: 'beige',
+            img: './assets/benefits/benefits2.png',
+            text: 'All of our products are made<br/>from natural ingredients'
+          },{
+            color: 'darkGreen',
+            img: './assets/benefits/benefits3.png',
+            text: 'We strive to create the most<br/>potent products we can for<br/>your healing'
+          }]
+        })
+      </div>
+
+      <div class="bestsellers">
+        @@include('./components/SectionTitle.html', {
+          prifix: 'shop',
+          sufix: 'Our Bestsellers',
+          center: true
+        })
+  
+        @@include('./components/BestsellersSlider.html')
+      </div>
+    </section>
+
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

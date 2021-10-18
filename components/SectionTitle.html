@@ -1,0 +1,12 @@
+@@if (center) {
+  <div class="section__title section__title--center">
+}
+@@if (!center) {
+  <div class="section__title">
+}
+  <h2 class="section__title-prifix">@@prifix</h2>
+  @@if (prifix !== '') {
+    <div class="section__title-spacer"></div>
+  }
+  <h1 class="section__title-sufix">@@sufix</h1>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+    <section class="section__shopCards">
+      @@include('./components/MainSlider.html')
+    </section>
+    <section class="section__banner">
+      @@include('./components/Banner.html', {
+        img: './assets/Banner/banner1.png',
+        title: 'Natural. Organic. Delicious.',
+        description: 'Herbal tea dates way back and has been used in<br/>traditional medicine for it’s  health benefits.<br/>Our premium herbal blends relaxes you and heals<br/>your body and mind. Whatever healing you seek, we<br/>have something in store for you.'
+      })
+      <br><br><br><br>
+    </section>
+    <section class="section__products">
+      @@include('./components/Products.html')
+    </section>
+    <section class="section__reviews">
+      @@include('./components/OurReviews.html')
+    </section>
+    <section class="section__discount">
+      @@include('./components/Discount.html', {
+        type: 'img'
+      })
+    </section>
+    <br><br>
+    <hr color="#E5EAED" />
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

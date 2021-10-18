@@ -1,0 +1,26 @@
+@import "./inc/_colors.sass"
+@import './inc/_points'
+
+.header__message
+  height: 2.8571rem
+  background: $MainGreen
+  display: flex
+  justify-content: center
+  align-items: center
+
+  @media ( max-width: $mobile )
+    height: 15px
+
+  &-text
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.8571rem
+    line-height: 1rem
+    letter-spacing: 0.3142rem
+    text-transform: uppercase
+    @media ( max-width: $mobile )
+      font-size: 5px
+      line-height: 6px
+
+    color: $Font_white

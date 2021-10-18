@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+    <section class="section__blog">
+      <div class="blog__content">
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+        @@include('./components/blogItem.html')
+      </div>
+      <aside class="blog__aside">
+        <div class="blog__aside-categories">
+          @@include('./components/Button.html', {
+            text: 'salve',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'wax',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'tea',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'propolis',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'guidance',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'stories',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'tips',
+            type: 'orangeOutline'
+          })
+          @@include('./components/Button.html', {
+            text: 'products',
+            type: 'orangeOutline'
+          })
+        </div>
+        <div class="blog__aside-popular">
+          <span class="blog__aside-popular-title">Popular Posts</span>
+          <ul>
+            <li> <a href="#">Where did the Beeswax & Propolis Magic Salve Come From and Why is it so special?</a> </li>
+            <li> <a href="#">How do we make our healing salves?</a> </li>
+            <li> <a href="#">Properties of key ingredients in ourselves?</a> </li>
+            <li> <a href="#">How to use Beeswax & Propolis Magic Salve?</a> </li>
+          </ul>
+        </div>
+        <div class="blog__aside-instagram">
+          <h1>Instagram</h1>
+          <div class="imgs">
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+            <img src="https://source.unsplash.com/random" />
+          </div>
+          @@include('./components/Button.html', {
+            text: 'Go to profile',
+            type: 'orange'
+          })
+        </div>
+      </aside>
+    </section>
+    <hr class="hr" />
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

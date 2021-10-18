@@ -1,0 +1,19 @@
+.slider__dots {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  grid-gap: 0.8571rem;
+}
+
+.slider__dots-dot {
+  width: 0.7142rem;
+  height: 0.7142rem;
+  background: #D9D9D9;
+  border-radius: 100%;
+}
+
+.slider__dots-dot--active {
+  box-shadow: 0 0 0.1428rem 0.2142rem #4F5544;
+}

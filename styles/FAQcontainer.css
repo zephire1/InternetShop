@@ -1,0 +1,9 @@
+.FAQcontainer {
+  display: flex;
+  align-items: center;
+  margin: 0 7.6428rem;
+}
+
+.FAQcontainer__list {
+  width: 100%;
+}

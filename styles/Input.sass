@@ -1,0 +1,40 @@
+@import './inc/_colors'
+
+.input
+  position: relative
+  margin-top: 20px
+
+  &__label
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+    color: $Font_DarkGreen
+
+    position: absolute
+    left: 13px
+    top: -7px
+
+  &__field
+    width: 100%
+    height: 35px
+    border: 1px solid $Lines
+    border-radius: 30px
+    outline: none
+    padding-left: 15px
+
+    &::placeholder
+      color: $Font_DarkGreen
+      opacity: .5
+
+  &__special
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 20px
+    color: $DarkGreen
+    position: absolute
+    top: 7px
+    right: 12px

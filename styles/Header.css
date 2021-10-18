@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: 3.5714rem;
+}
+
+@media (max-width: 425px) {
+  .header {
+    margin-bottom: 15px;
+  }
+}

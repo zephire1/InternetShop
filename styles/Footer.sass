@@ -1,0 +1,87 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.footer
+  padding: 7.1428rem 10rem
+  position: relative
+  @media ( max-width: $tablet )
+    padding: 7.1428rem 2.8571rem
+  @media ( max-width: $mobile )
+    padding: 70px 20px
+    
+
+  &__top,
+  &__down
+    display: flex
+    justify-content: space-between
+
+  &__top
+    @media ( max-width: $mobile )
+      flex-direction: column
+
+  &__down
+    margin-top: 13rem
+    @media ( max-width: $mobile )
+      margin-top: 37px
+
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    @media ( max-width: $mobile )
+      margin-top: 37px
+    &--cards
+      flex-direction: row!important
+      grid-gap: 0.5rem
+      margin-right: 13.3571rem
+
+      @media ( max-width: $tablet )
+        margin-right: 11.0571rem
+
+      @media ( max-width: $mobile )
+        margin: 0
+        position: absolute
+        right: 25px
+        top: 23%
+        img
+          width: 25px
+        
+
+    &-title
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 0.9285rem
+      letter-spacing: 0.1857rem
+      text-transform: uppercase
+
+      color: $Font_DarkGreen
+      min-height: 2.8571rem
+
+      @media ( max-width: $mobile )
+        font-size: 11px
+        line-height: 16px
+
+    &-item
+      margin-bottom: 0.8571rem
+
+      &--socials
+        display: flex
+        grid-gap: 1.5rem
+        @media ( max-width: $mobile )
+          position: absolute
+          right: 25px
+          top: 18.5%
+
+  &__copyright
+    margin-top: 3.2857rem
+
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.8571rem
+    line-height: 1.4285rem
+    letter-spacing: 0.1714rem
+    text-transform: uppercase
+
+    color: $Font_DarkGreen

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+
+    @@include('./components/ShopTitle.html', {
+      title: 'shilajit'
+    })
+
+    <section class="section__banner">
+      @@include('./components/Banner.html', {
+        img: './assets/Banner/banner2.png',
+        title: 'What is shilajit?',
+        description: 'Shilajit is a sticky substance found primarily in the rocks of the<br/>Himalayas. It develops over centuries from the slow<br/>decomposition of plants.<br/>Shilajit is commonly used in ayurvedic medicine. It’s an effective<br/>and safe supplement that can have a positive effect on your<br/>overall health and well-being.'
+      })
+      <br><br><br><br>
+    </section>
+    <section class="section__benefits">
+      @@include('./components/RowItems.html', {
+        items: [{
+          color: 'green',
+          img: './assets/shilajit/shilajit1.svg',
+          text: 'Shilajit contains fulvic acid and<br/>more than 84 minerals'
+        },{
+          color: 'beige',
+          img: './assets/shilajit/shilajit2.svg',
+          text: "It can function as an<br/>antioxidant to improve your<br/>body's immunity and memory"
+        },{
+          color: 'darkGreen',
+          img: './assets/shilajit/shilajit3.svg',
+          text: 'An anti-inflammatory, an<br/>energy booster, and a diuretic<br/>to remove excess fluid from<br/>your body.'
+        }]
+      })
+    </section>
+    <section class="section__howUse">
+      @@include('./components/HowUse.html')
+    </section>
+    <section class="section__discount">
+      @@include('./components/Discount.html', {
+        type: 'img'
+      })
+    </section>
+    <br><br>
+    <hr color="#E5EAED" />
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

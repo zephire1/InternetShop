@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+    <section class="section__login">
+      <form action="#" class="section__login-form">
+        <span class="form-title">LOGIN</span>
+        <span class="form-subtitle">Please enter your e-mail and password:</span>
+        @@include('./components/Input.html', {
+          title: 'Email',
+          placeholder: ''
+        })
+        @@include('./components/Input.html', {
+          title: 'Password',
+          placeholder: '',
+          link: '/'
+        })
+        @@include('./components/Button.html', {
+          type: "orange",
+          text: "Log in"
+        })
+        <div class="links">
+          <a href="#">Don't have an account?</a>
+          <a href="#">Create one ></a>
+        </div>
+      </form>
+    </section>
+    <hr class="hr" />
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

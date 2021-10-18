@@ -1,0 +1,33 @@
+.mobileFlyCart {
+  position: fixed;
+  right: 20px;
+  top: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #99A287;
+  background: #FAFFF6;
+  border-radius: 100%;
+}
+
+@media (max-width: 425px) {
+  .mobileFlyCart {
+    display: flex;
+  }
+}
+
+.mobileFlyCart-count {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  left: 28px;
+  top: 11px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 7px;
+  letter-spacing: 2.6px;
+  color: #4F5544;
+}

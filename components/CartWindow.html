@@ -1,0 +1,99 @@
+<div class="CartWindow">
+
+  <div class="CartWindow__content">
+    <div class="CartWindow__header">
+      <h1 class="CartWindow__header-title">your bag <div class="shape"></div> 1 item</h1>
+      <button class="closeCart"><img class="CartWindow__header-close" src="./assets/close--dark.svg" alt="close" loading="lazy" /></button>
+    </div>
+    <div class="CartWindow__natif">
+      We offer FREE Shipping on all orders over $100 across Canada
+    </div>
+
+    <div class="CartWindow__takes">
+      @@include('./CartItem.html', {
+        img: './assets/Products/product6.jpg',
+        title: 'Beeswax & Propolis magic salve',
+        price: '$25.00',
+        action: 'remove',
+        id: 'cart-1'
+      })
+      <br /><br />
+      @@include('./CartItem.html', {
+        img: './assets/Products/product6.jpg',
+        title: 'Beeswax & Propolis magic salve',
+        price: '$25.00',
+        action: 'remove',
+        id: 'cart-2'
+      })
+    </div>
+    <hr />
+
+    <div class="CartWindow__recommended">
+      <div class="CartWindow__recommended-title">Recommended for You</div>
+      <div class="CartWindow__recommended-items">
+        @@include('./CartItem.html', {
+          img: './assets/Products/product6.jpg',
+          title: 'Beeswax & Propolis magic salve',
+          price: '$25.00',
+          action: 'add',
+          id: 'cart-3'
+        })
+        @@include('./CartItem.html', {
+          img: './assets/Products/product6.jpg',
+          title: 'Beeswax & Propolis magic salve',
+          price: '$25.00',
+          action: 'add',
+          id: 'cart-4'
+        })
+        @@include('./CartItem.html', {
+          img: './assets/Products/product6.jpg',
+          title: 'Beeswax & Propolis magic salve',
+          price: '$25.00',
+          action: 'add',
+          id: 'cart-5'
+        })
+      </div>
+    </div>
+
+    <div class="CartWindow__footer">
+
+      <div class="CartWindow__footer-total">
+        <span>Estimated Total</span>
+        <span>$30.34</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Subtotal</span>
+        <span>$18.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Shipping</span>
+        <span>$10.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>tax</span>
+        <span>$2.34</span>
+      </div>
+
+      <div class="CartWindow__footer-coupon">
+        @@include('./Input.html', {
+          title: 'coupon code',
+          placeholder: ''
+        })
+        @@include('./Button.html', {
+          text: 'apply coupon',
+          type: 'orangeOutline'
+        })
+      </div>
+      <div class="CartWindow__footer-btn">
+        @@include('./Button.html', {
+          text: 'checkout',
+          type: 'orange'
+        })
+      </div>
+
+    </div>
+
+    <div class="closeCart CartWindow__content-trigger"></div>
+  </div>
+
+</div>

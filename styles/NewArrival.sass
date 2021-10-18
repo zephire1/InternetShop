@@ -1,0 +1,98 @@
+  @import './inc/_colors'
+@import './inc/_points'
+
+.newArrival
+  display: flex
+  justify-content: center
+  margin-top: 4.5428rem
+
+  @media ( max-width: $mobile )
+    flex-direction: column
+    align-items: center
+    width: 210px
+    margin: 4.5428rem auto
+
+  &__preview
+    width: 33rem
+    height: 29.0714rem
+    background-repeat: no-repeat
+    background-size: cover
+
+    @media ( max-width: $mobile )
+      width: 208px
+      height: 212px
+
+  &__content
+    margin-left: 6.7857rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    @media ( max-width: $tablet )
+      margin-left: 2.2857rem
+
+    @media ( max-width: $mobile )
+      margin-left: unset
+
+    &-footer
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      .counter
+        margin: 0.2142rem 0 1rem 0
+
+    &-title
+      font-family: 'EB Garamond', sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 3.4285rem
+      line-height: 3rem
+      text-transform: capitalize
+
+      color: $Font_green
+
+      @media ( max-width: $mobile )
+        font-size: 23px
+        line-height: 20px
+        margin-top: 11px
+
+    &-edition
+      margin-top: 0.7857rem
+    &-edition,
+    &-size,
+    &-reviews
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1rem
+      line-height: 1.6428rem
+      letter-spacing: 0.0714rem
+
+      color: $Font_DarkGreen
+
+    &-size
+    &-reviews
+      margin-top: 0.0928rem
+      font-size: 0.6428rem
+      line-height: 0.7142rem
+      @media ( max-width: $mobile )
+        font-size: 7px
+        line-height: 10px
+    &-price
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 0.9285rem
+      line-height: 1.5rem
+      letter-spacing: 0.1857rem
+      color: $Font_DarkGreen
+      @media ( max-width: $mobile )
+        font-size: 11px
+        line-height: 16px
+
+    &-btn
+      text-align: center
+      button
+        width: 100%
+        margin-bottom: 1.0714rem

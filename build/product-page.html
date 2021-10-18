@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название сайта</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href=./css/main.css>
+  <link rel="stylesheet" href=./css/owl.carousel.min.css>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+
+  <!-- scripts -->
+  <script src=./js/lib/jquery-3.6.0.min.js></script>
+  <script src=./js/lib/owl.carousel.min.js></script>
+  <script src=./js/main.js></script>
+
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+  <div class="header__message">
+  <span class="header__message-text">Products are delivered and territory of Canada</span>
+</div>
+  <div class="header__main">
+  <div class="header__main-empty"></div>
+  <a href="index.html"><img class="header__main-logo" src="./assets/logo.svg" alt="logo" loading="lazy" /></a>
+  <button class="header__main-burger openNavMenu"><img src="./assets/burger.svg" alt="menu" /></button>
+  <div class="header__main-userPanel">
+    <div class="header__main-userPanel__item header__main-userPanel__item--locate">US/CA <img src="./assets/locate.svg" alt="locate" loading="lazy" /></div>
+    <div class="header__main-userPanel__item">
+      <img src="./assets/user.svg" alt="user" loading="lazy" />
+    </div>
+    <button class="openCart header__main-userPanel__item">
+      <img src="./assets/cart.svg" alt="cart" loading="lazy" />
+      <span class='header__main-cartCount'>2</span>
+    </button>
+  </div>
+</div>
+  <nav class="header__nav">
+
+  <div class="header__nav-item">
+    <a href="shop.html"><div class="nav__item-title">shop</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <button><div class="nav__item-title">teas <img src="./assets/dropDown.svg" alt="dropDown" loading="lazy" /></div></button>
+    <ul class="nav__item-dropDawn">
+      <li href="#"><a href="#">link</a></li>
+      <li href="#"><a href="#">link</a></li>
+    </ul>
+  </div>
+
+  <div class="header__nav-item">
+    <button><div class="nav__item-title">shilajit <img src="./assets/dropDown.svg" alt="dropDown" loading="lazy" /></div></button>
+    <ul class="nav__item-dropDawn">
+      <li href="#"><a href="#">Link1</a></li>
+      <li href="#"><a href="#">about</a></li>
+      <li href="#"><a href="#">more</a></li>
+      <li href="#"><a href="#">big link</a></li>
+    </ul>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="#"><div class="nav__item-title">about</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="#"><div class="nav__item-title">reviews</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="faq.html"><div class="nav__item-title">faq</div></a>
+  </div>
+
+</nav>
+  <div class="header__navMobile">
+
+  <div class="header__navMobile-content">
+    <div class="navMobile__header">
+      <button class="closeNavMenu"><img class="navMobile__header-close" src="./assets/close.svg" alt="close" loading="lazy" /></button>
+    </div>
+
+    <h1 class="navMobile__title">My Magic Healer</h1>
+    <div class="navMobile__items">
+      <div class="navMobile__item">
+        <a href="#">shop</a>
+      </div>
+      <div class="navMobile__item">
+        <button class="showList" data-ul="teas">teas <img src="./assets/dropDown--white.svg" alt="dropDown" loading="lazy" /></button>
+        <ul class="teas navMobile__item-ul">
+          <li class="navMobile__item-li"> <a href="#">about</a> </li>
+          <li class="navMobile__item-li"> <a href="#">shop</a> </li>
+        </ul>
+      </div>
+      <div class="navMobile__item">
+        <button class="showList" data-ul="shilajit">shilajit <img src="./assets/dropDown--white.svg" alt="dropDown" loading="lazy" /></button>
+        <ul class="shilajit navMobile__item-ul">
+          <li class="navMobile__item-li"> <a href="#">about</a> </li>
+          <li class="navMobile__item-li"> <a href="#">shop</a> </li>
+        </ul>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">about</a>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">reviews</a>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">faq</a>
+      </div>
+    </div>
+
+    <div class="navMobile__footer">
+      <div class="navMobile__footer-socials">
+        <a href="#"> <img src="./assets/socials/footer/instagram.svg" alt="inst" loading="lazy" /> </a>
+        <a href="#"> <img src="./assets/socials/footer/pin.svg" alt="pin" loading="lazy" /> </a>
+        <a href="#"> <img src="./assets/socials/footer/tiktok.svg" alt="tiktok" loading="lazy" /> </a>
+      </div>
+      <div class="navMobile__footer-text">© My Magic Healer Store</div>
+    </div>
+
+    <div class="closeNavMenu header__navMobile-trigger"></div>
+  </div>
+  
+</div>
+  <div class="CartWindow">
+
+  <div class="CartWindow__content">
+    <div class="CartWindow__header">
+      <h1 class="CartWindow__header-title">your bag <div class="shape"></div> 1 item</h1>
+      <button class="closeCart"><img class="CartWindow__header-close" src="./assets/close--dark.svg" alt="close" loading="lazy" /></button>
+    </div>
+    <div class="CartWindow__natif">
+      We offer FREE Shipping on all orders over $100 across Canada
+    </div>
+
+    <div class="CartWindow__takes">
+      <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+          <button>remove <img src="./assets/close--darkSmall.svg" alt="remove" loading="lazy" /></button>
+        
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-1 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-1 counter__text">1</span>
+  <button data-id=cart-1 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+      <br /><br />
+      <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+          <button>remove <img src="./assets/close--darkSmall.svg" alt="remove" loading="lazy" /></button>
+        
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-2 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-2 counter__text">1</span>
+  <button data-id=cart-2 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+    <hr />
+
+    <div class="CartWindow__recommended">
+      <div class="CartWindow__recommended-title">Recommended for You</div>
+      <div class="CartWindow__recommended-items">
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-3 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-3 counter__text">1</span>
+  <button data-id=cart-3 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-4 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-4 counter__text">1</span>
+  <button data-id=cart-4 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-5 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-5 counter__text">1</span>
+  <button data-id=cart-5 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="CartWindow__footer">
+
+      <div class="CartWindow__footer-total">
+        <span>Estimated Total</span>
+        <span>$30.34</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Subtotal</span>
+        <span>$18.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Shipping</span>
+        <span>$10.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>tax</span>
+        <span>$2.34</span>
+      </div>
+
+      <div class="CartWindow__footer-coupon">
+        <div class="input">
+  <label class="input__label">coupon code</label>
+  <input class="input__field" type="text" placeholder="" />
+  
+  
+</div>
+        <button class="btn btn--orangeOutline">apply coupon</button>
+      </div>
+      <div class="CartWindow__footer-btn">
+        <button class="btn btn--orange">checkout</button>
+      </div>
+
+    </div>
+
+    <div class="closeCart CartWindow__content-trigger"></div>
+  </div>
+
+</div>
+  <button class="openCart">
+  <div class="mobileFlyCart">
+    <img class="mobileFlyCart-img" src="./assets/flyCart.svg" alt="img" loading="lazy" />
+    <span class="mobileFlyCart-count">1</span>
+  </div>
+</button>
+</header>
+
+    <section class="section__productPage">
+
+      <div class="productPage__header">
+        <div class="productPage__header-images">
+          <div class="productPage__imageList">
+            <img src="./assets/Products/1.png" alt="img1" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img2" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img3" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img4" loading="lazy" />
+          </div>
+          <div class="productPage__image">
+            <img src="./assets/Products/product6.jpg" alt="img1" loading="lazy" />
+            <div class="productPage__image-dots">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
+        <div class="productPage__header-info">
+          <div>
+            <h1 class="productPage-title">Propolis & Beeswax<br />Potent Ointment <img src="./assets/organic.svg" alt="organic" loading="lazy" /></h1>
+            <p class="productPage-description">
+              Salve that is known to help with 100 problems.<br/>
+              It is very potent, powerful and universal product<br/>
+              to use for anything that is inflamed.
+            </p>
+          </div>
+          <div>
+            <div class="productPage-price">
+              <span>$ 33.00</span>
+              <span>100mL</span>
+            </div>
+            <div class="productPage-template">
+              <button class="productPage-template-item active">
+                <small>50mL</small>
+                <span>$ 21.00</span>
+              </button>
+              <button class="productPage-template-item">
+                <small>100mL </small>
+                <span>$ 33.00</span>
+              </button>
+
+              <div class="counter">
+  <button data-id=adawd1 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="adawd1 counter__text">1</span>
+  <button data-id=adawd1 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+            </div>
+            <p class="productPage-disclaimer">
+              Disclaimer: The product has not been evaluated by Canada health and the FDA and is not<br/>intended to treat, diagnose, cure, or prevent any disease.
+            </p>
+            <div class="productPage-buttons">
+              <button class="btn btn--orange">Add to cart</button>
+              <button class="btn btn--orangeOutline">pre-order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productPage__tabs">
+        <ul class="productPage__tabs-ul">
+          <button><li data-id="tab-1" class="productPage__tabs-li active">about</li></button>
+          <button><li data-id="tab-2" class="productPage__tabs-li">Ingredients</li></button>
+          <button><li data-id="tab-3" class="productPage__tabs-li">Reviews (0)</li></button>
+        </ul>
+
+        <section class="tab tab-1 active">
+          <h1 class="tab__title">This 100% organic blend of serenity is good whenever you<br/>need some tranquility. Enjoy the calming minty, herbal flavour<br/>for your body and mind.</h1>
+          <p class="tab__description">
+            Healing the body takes time so consistency is a key. Healing the body is also not one product<br/>
+            job, dis-ease requires a complex and holistic approach to come to the ultimate solution.<br/>
+            IMPORTANT TO UNDERSTAND: Herbs will not not be a solution to all of the problems<br/>
+            but the regular consumption of the right herbs may improve your physical and mental state.
+          </p>
+        </section>
+        <section class="tab tab-2">
+          <ul class="tab__ul">
+            
+            <button class="openProductQues" data-id="productList-1">
+              <li class="tab__li">
+                organic sunflower oil
+                <img data-id="productList-1" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+            
+            <button class="openProductQues" data-id="productList-2">
+              <li class="tab__li">
+                organic safflower oil
+                <img data-id="productList-2" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+            <button class="openProductQues" data-id="productList-3">
+              <li class="tab__li">
+                hemp oil
+                <img data-id="productList-3" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+            <button class="openProductQues" data-id="productList-4">
+              <li class="tab__li">
+                beeswax
+                <img data-id="productList-4" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+          </ul>
+        </section>
+        
+      </div>
+      <div class="productPage__use">
+        
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix"></h2>
+  
+  <h1 class="section__title-sufix">How to use Propolis & Beeswax Potent Ointment</h1>
+</div>
+        <div class="productPage__use-grid">
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-1 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-1 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-2 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-2 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-3 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-3 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-4 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-4 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-5 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-5 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-6 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-6 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-7 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-7 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+          <div class="FAQitem">
+  <div class="FAQitem__top">
+    1. What is your shipping standard?
+    <button class="faqOpen FAQitem__top-button"><img data-id=FAQ-8 class="FAQitem__top-img" src="./assets/plus.svg" alt="plus" loading="lazy" /></button>
+  </div>
+  <div class="FAQ-8 FAQitem__bottom">
+    Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.
+  </div>
+</div>
+        </div>
+        
+      </div>
+      <section class="section__benefits">
+        
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix"></h2>
+  
+  <h1 class="section__title-sufix">Instruction</h1>
+</div>
+        <br><br>
+        <div class="rowItems">
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/Instruction/clock.svg /></div>
+      <p class="rowItems__item-text rowItems__item-text--green">We choose only the highest<br/>quality ingredients</p>
+    </div>
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/Instruction/mug.svg /></div>
+      <p class="rowItems__item-text rowItems__item-text--beige">All of our products are made<br/>from natural ingredients</p>
+    </div>
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/Instruction/spoon.svg /></div>
+      <p class="rowItems__item-text rowItems__item-text--darkGreen">We strive to create the most<br/>potent products we can for<br/>your healing</p>
+    </div>
+  
+</div>
+        <br><br>
+      </section>
+
+      <div class="productPage__like">
+        <h2 class="productPage__like-title">You may also like</h2>
+        <div class="productsList__list">
+          <div class="productCard">
+  <img class="productCard-img" src=./assets/Products/product1.jpg alt="productCard" loading="lazy" />
+  <h4 class="productCard-title">Immunity Boost</h4>
+  <span class="productCard-reviews">4 Reviews</span>
+  <span class="productCard-price">$12</span>
+</div>
+          <div class="productCard">
+  <img class="productCard-img" src=./assets/Products/product2.jpg alt="productCard" loading="lazy" />
+  <h4 class="productCard-title">Immunity Boost</h4>
+  <span class="productCard-reviews">4 Reviews</span>
+  <span class="productCard-price">$12</span>
+</div>
+          <div class="productCard">
+  <img class="productCard-img" src=./assets/Products/product3.jpg alt="productCard" loading="lazy" />
+  <h4 class="productCard-title">Immunity Boost</h4>
+  <span class="productCard-reviews">4 Reviews</span>
+  <span class="productCard-price">$12</span>
+</div>
+          <div class="productCard">
+  <img class="productCard-img" src=./assets/Products/product3.jpg alt="productCard" loading="lazy" />
+  <h4 class="productCard-title">Immunity Boost</h4>
+  <span class="productCard-reviews">4 Reviews</span>
+  <span class="productCard-price">$12</span>
+</div>
+        </div>
+      </div>
+      <br><br><br>
+      <hr color="#E5EAED" />
+
+    </section>
+
+    <footer class="footer">
+
+  <div class="footer__top">
+    <div class="footer__list">
+      <h5 class="footer__list-title">Connect</h5>
+      <span class="footer__list-item"> <a class="link" href=#>Contact Us</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>FAQs</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Shipping</a> </span>
+    </div>
+    <div class="footer__list">
+      <h5 class="footer__list-title">Terms & Policies</h5>
+      <span class="footer__list-item"> <a class="link" href=#>Refunds & Shipping Policy</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Privacy Policy</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Terms & Conditions</a> </span>
+    </div>
+    <div class="footer__list">
+      <h5 class="footer__list-title"></h5>
+      <span class="footer__list-item"> <a class="link" href=#>Blog</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Sign Up & Get 15% OFF Your First Purchase</a> </span>
+      <span class="footer__list-item footer__list-item--socials">
+        <a href="#" target="_blank"><img src="./assets/socials/instagram.svg" alt="instagram" loading="lazzy" /></a>
+        <a href="#" target="_blank"><img src="./assets/socials/pin.svg" alt="pin" loading="lazzy" /></a>
+        <a href="#" target="_blank"><img src="./assets/socials/tiktok.svg" alt="tiktok" loading="lazzy" /></a>
+      </span>
+    </div>
+  </div>
+  <div class="footer__down">
+    <div class="footer__list">
+      <h5 class="footer__list-title">About the shop</h5>
+      <span class="footer__list-item"> <span class="link">My Magic Healer Store we believe that healthy skin is<br/>the most beautiful skin.</span> </span>
+      <div class="footer__copyright">© My Magic Healer Store</div>
+    </div>
+    <div class="footer__list footer__list--cards">
+      <img src="./assets/FooterCards/amazon.svg" alt="amazon" loading="lazzy" />
+      <img src="./assets/FooterCards/paypal.svg" alt="paypal" loading="lazzy" />
+      <img src="./assets/FooterCards/stripe.png" alt="stripe" loading="lazzy" />
+    </div>
+  </div>
+
+</footer>
+  </main>
+</body>
+</html>

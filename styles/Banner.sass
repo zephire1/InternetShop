@@ -1,0 +1,43 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.banner
+  display: flex
+  justify-content: center
+  @media ( max-width: $mobile )
+    flex-direction: column
+    margin: 0 50px
+
+  &-img
+    @media ( max-width: $mobile )
+      order: 1
+      margin-top: 8px
+
+  &__info
+    margin-left: 3.5714rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @media ( max-width: $mobile )
+      margin-left: unset
+
+    &-title
+      margin-bottom: 1.57135714rem
+
+      font-family: 'EB Garamond', sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 3.4285rem
+      line-height: 1.5714rem
+      text-transform: capitalize
+
+      color: $Font_green
+
+      white-space: pre-line
+
+      @media ( max-width: $mobile )
+        font-size: 32px
+        line-height: 27px
+        text-align: center
+
+        .description

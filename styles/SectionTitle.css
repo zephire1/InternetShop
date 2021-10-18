@@ -1,0 +1,42 @@
+@media (max-width: 425px) {
+  .section__title {
+    text-align: center;
+  }
+}
+
+.section__title--center * {
+  text-align: center;
+}
+
+.section__title-prifix {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9285rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1857rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+.section__title-sufix {
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.4285rem;
+  line-height: 1.5714rem;
+  text-transform: capitalize;
+  color: #99A287;
+}
+
+@media (max-width: 425px) {
+  .section__title-sufix {
+    font-size: 28px;
+    line-height: 27px;
+    margin: 0 17px;
+  }
+}
+
+.section__title-spacer {
+  margin-top: 1.0714rem;
+}

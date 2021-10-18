@@ -1,0 +1,43 @@
+@import './inc/_colors'
+
+.FAQitem
+  margin-bottom: 40px
+
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.4285rem
+    letter-spacing: 0.01em
+    text-transform: uppercase
+
+    color: $Font_DarkGreen
+
+    border-bottom: 0.0714rem solid $Lines
+    padding-bottom: 0.7142rem
+
+    &-img
+
+    &-button
+      transition: .3s
+      &.active
+        transform: rotate(-45deg)
+
+  &__bottom
+    width: 81%
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.4285rem
+
+    color: $Font_blog
+
+    display: none
+    &.active
+      display: block

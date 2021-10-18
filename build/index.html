@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название сайта</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href=./css/main.css>
+  <link rel="stylesheet" href=./css/owl.carousel.min.css>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+
+  <!-- scripts -->
+  <script src=./js/lib/jquery-3.6.0.min.js></script>
+  <script src=./js/lib/owl.carousel.min.js></script>
+  <script src=./js/main.js></script>
+
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+  <div class="header__message">
+  <span class="header__message-text">Products are delivered and territory of Canada</span>
+</div>
+  <div class="header__main">
+  <div class="header__main-empty"></div>
+  <a href="index.html"><img class="header__main-logo" src="./assets/logo.svg" alt="logo" loading="lazy" /></a>
+  <button class="header__main-burger openNavMenu"><img src="./assets/burger.svg" alt="menu" /></button>
+  <div class="header__main-userPanel">
+    <div class="header__main-userPanel__item header__main-userPanel__item--locate">US/CA <img src="./assets/locate.svg" alt="locate" loading="lazy" /></div>
+    <div class="header__main-userPanel__item">
+      <img src="./assets/user.svg" alt="user" loading="lazy" />
+    </div>
+    <button class="openCart header__main-userPanel__item">
+      <img src="./assets/cart.svg" alt="cart" loading="lazy" />
+      <span class='header__main-cartCount'>2</span>
+    </button>
+  </div>
+</div>
+  <nav class="header__nav">
+
+  <div class="header__nav-item">
+    <a href="shop.html"><div class="nav__item-title">shop</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <button><div class="nav__item-title">teas <img src="./assets/dropDown.svg" alt="dropDown" loading="lazy" /></div></button>
+    <ul class="nav__item-dropDawn">
+      <li href="#"><a href="#">link</a></li>
+      <li href="#"><a href="#">link</a></li>
+    </ul>
+  </div>
+
+  <div class="header__nav-item">
+    <button><div class="nav__item-title">shilajit <img src="./assets/dropDown.svg" alt="dropDown" loading="lazy" /></div></button>
+    <ul class="nav__item-dropDawn">
+      <li href="#"><a href="#">Link1</a></li>
+      <li href="#"><a href="#">about</a></li>
+      <li href="#"><a href="#">more</a></li>
+      <li href="#"><a href="#">big link</a></li>
+    </ul>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="#"><div class="nav__item-title">about</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="#"><div class="nav__item-title">reviews</div></a>
+  </div>
+
+  <div class="header__nav-item">
+    <a href="faq.html"><div class="nav__item-title">faq</div></a>
+  </div>
+
+</nav>
+  <div class="header__navMobile">
+
+  <div class="header__navMobile-content">
+    <div class="navMobile__header">
+      <button class="closeNavMenu"><img class="navMobile__header-close" src="./assets/close.svg" alt="close" loading="lazy" /></button>
+    </div>
+
+    <h1 class="navMobile__title">My Magic Healer</h1>
+    <div class="navMobile__items">
+      <div class="navMobile__item">
+        <a href="#">shop</a>
+      </div>
+      <div class="navMobile__item">
+        <button class="showList" data-ul="teas">teas <img src="./assets/dropDown--white.svg" alt="dropDown" loading="lazy" /></button>
+        <ul class="teas navMobile__item-ul">
+          <li class="navMobile__item-li"> <a href="#">about</a> </li>
+          <li class="navMobile__item-li"> <a href="#">shop</a> </li>
+        </ul>
+      </div>
+      <div class="navMobile__item">
+        <button class="showList" data-ul="shilajit">shilajit <img src="./assets/dropDown--white.svg" alt="dropDown" loading="lazy" /></button>
+        <ul class="shilajit navMobile__item-ul">
+          <li class="navMobile__item-li"> <a href="#">about</a> </li>
+          <li class="navMobile__item-li"> <a href="#">shop</a> </li>
+        </ul>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">about</a>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">reviews</a>
+      </div>
+      <div class="navMobile__item">
+        <a href="#">faq</a>
+      </div>
+    </div>
+
+    <div class="navMobile__footer">
+      <div class="navMobile__footer-socials">
+        <a href="#"> <img src="./assets/socials/footer/instagram.svg" alt="inst" loading="lazy" /> </a>
+        <a href="#"> <img src="./assets/socials/footer/pin.svg" alt="pin" loading="lazy" /> </a>
+        <a href="#"> <img src="./assets/socials/footer/tiktok.svg" alt="tiktok" loading="lazy" /> </a>
+      </div>
+      <div class="navMobile__footer-text">© My Magic Healer Store</div>
+    </div>
+
+    <div class="closeNavMenu header__navMobile-trigger"></div>
+  </div>
+  
+</div>
+  <div class="CartWindow">
+
+  <div class="CartWindow__content">
+    <div class="CartWindow__header">
+      <h1 class="CartWindow__header-title">your bag <div class="shape"></div> 1 item</h1>
+      <button class="closeCart"><img class="CartWindow__header-close" src="./assets/close--dark.svg" alt="close" loading="lazy" /></button>
+    </div>
+    <div class="CartWindow__natif">
+      We offer FREE Shipping on all orders over $100 across Canada
+    </div>
+
+    <div class="CartWindow__takes">
+      <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+          <button>remove <img src="./assets/close--darkSmall.svg" alt="remove" loading="lazy" /></button>
+        
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-1 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-1 counter__text">1</span>
+  <button data-id=cart-1 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+      <br /><br />
+      <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+          <button>remove <img src="./assets/close--darkSmall.svg" alt="remove" loading="lazy" /></button>
+        
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-2 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-2 counter__text">1</span>
+  <button data-id=cart-2 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+    <hr />
+
+    <div class="CartWindow__recommended">
+      <div class="CartWindow__recommended-title">Recommended for You</div>
+      <div class="CartWindow__recommended-items">
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-3 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-3 counter__text">1</span>
+  <button data-id=cart-3 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-4 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-4 counter__text">1</span>
+  <button data-id=cart-4 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+        <div class="cartItem">
+
+  <img src=./assets/Products/product6.jpg alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">Beeswax & Propolis magic salve</h1>
+      <div class="cartItem__top-action">
+        
+        
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">$25.00</span>
+      <div class="counter">
+  <button data-id=cart-5 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="cart-5 counter__text">1</span>
+  <button data-id=cart-5 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+    </div>
+
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="CartWindow__footer">
+
+      <div class="CartWindow__footer-total">
+        <span>Estimated Total</span>
+        <span>$30.34</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Subtotal</span>
+        <span>$18.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>Shipping</span>
+        <span>$10.00</span>
+      </div>
+      <div class="CartWindow__footer-info">
+        <span>tax</span>
+        <span>$2.34</span>
+      </div>
+
+      <div class="CartWindow__footer-coupon">
+        <div class="input">
+  <label class="input__label">coupon code</label>
+  <input class="input__field" type="text" placeholder="" />
+  
+  
+</div>
+        <button class="btn btn--orangeOutline">apply coupon</button>
+      </div>
+      <div class="CartWindow__footer-btn">
+        <button class="btn btn--orange">checkout</button>
+      </div>
+
+    </div>
+
+    <div class="closeCart CartWindow__content-trigger"></div>
+  </div>
+
+</div>
+  <button class="openCart">
+  <div class="mobileFlyCart">
+    <img class="mobileFlyCart-img" src="./assets/flyCart.svg" alt="img" loading="lazy" />
+    <span class="mobileFlyCart-count">1</span>
+  </div>
+</button>
+</header>
+    <section class="section__MainSlider">
+      <div class="slider owl-carousel owl-carousel-main owl-theme">
+  <div class="item">
+    <div class="slider__content">
+      <h3 class="slider__content-title">We stand for healthy<br/>and beautiful generation</h3>
+      <h3 class="slider__content-description">Get a Combo of 3 healing teas and save $6</h3>
+      <div class="slider__content-btn">
+        <button class="btn btn--orange">save now</button>
+      </div>
+    </div>
+    <img class="slider__hero" src="./assets/hero/hero1.png" alt="slider hero" />
+  </div>
+  <div class="item">
+    <div class="slider__content">
+      <h3 class="slider__content-title">We stand for healthy<br/>and beautiful generation</h3>
+      <h3 class="slider__content-description">Get a Combo of 3 healing teas and save $6</h3>
+      <div class="slider__content-btn">
+        <button class="btn btn--orange">save now</button>
+      </div>
+    </div>
+    <img class="slider__hero" src="./assets/hero/hero1.png" alt="slider hero" />
+  </div>
+  <div class="item">
+    <div class="slider__content">
+      <h3 class="slider__content-title">We stand for healthy<br/>and beautiful generation</h3>
+      <h3 class="slider__content-description">Get a Combo of 3 healing teas and save $6</h3>
+      <div class="slider__content-btn">
+        <button class="btn btn--orange">save now</button>
+      </div>
+    </div>
+    <img class="slider__hero" src="./assets/hero/hero1.png" alt="slider hero" />
+  </div>
+</div>
+    </section>
+    <section class="section__bestsellers">
+      
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix">shop</h2>
+  
+    <div class="section__title-spacer"></div>
+  
+  <h1 class="section__title-sufix">Our Bestsellers</h1>
+</div>
+
+      <div class="BestsellersSlider owl-carousel owl-carousel-bestseller owl-theme">
+
+  <div class="item BestsellersSlider__item">
+    <div class="BestsellersSlider__preview" style="background-image: url('./assets/Bestsellers/Bestsellers1.png');"></div>
+    <div class="BestsellersSlider__info">
+      <h1 class="BestsellersSlider__info-title">Very Calming</h1>
+      <h3 class="BestsellersSlider__info-subtitle">with chamomile & Rose petals</h3>
+      <span class="BestsellersSlider__info-reviews">89 Reviews</span>
+      <span class="BestsellersSlider__info-price">From $25</span>
+
+      <button class="btn btn--orange">View this product</button>
+    </div>
+  </div>
+  <div class="item BestsellersSlider__item">
+    <div class="BestsellersSlider__preview" style="background-image: url('./assets/discount/img3.png');"></div>
+    <div class="BestsellersSlider__info">
+      <h1 class="BestsellersSlider__info-title">Very Calming2</h1>
+      <h3 class="BestsellersSlider__info-subtitle">with chamomile & Rose petals2</h3>
+      <span class="BestsellersSlider__info-reviews">819 Reviews</span>
+      <span class="BestsellersSlider__info-price">From $215</span>
+
+      <button class="btn btn--orange">View this product</button>
+    </div>
+  </div>
+  <div class="item BestsellersSlider__item">
+    <div class="BestsellersSlider__preview" style="background-image: url('./assets/discount/img3.png');"></div>
+    <div class="BestsellersSlider__info">
+      <h1 class="BestsellersSlider__info-title">Very Calming2</h1>
+      <h3 class="BestsellersSlider__info-subtitle">with chamomile & Rose petals2</h3>
+      <span class="BestsellersSlider__info-reviews">819 Reviews</span>
+      <span class="BestsellersSlider__info-price">From $215</span>
+
+      <button class="btn btn--orange">View this product</button>
+    </div>
+  </div>
+
+</div>
+
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__benefits">
+      <div class="rowItems">
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/benefits/benefits1.png /></div>
+      <p class="rowItems__item-text rowItems__item-text--green">We choose only the highest<br/>quality ingredients</p>
+    </div>
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/benefits/benefits2.png /></div>
+      <p class="rowItems__item-text rowItems__item-text--beige">All of our products are made<br/>from natural ingredients</p>
+    </div>
+  
+    <div class="rowItems__item">
+      <div class="rowItems__item-img"><img src=./assets/benefits/benefits3.png /></div>
+      <p class="rowItems__item-text rowItems__item-text--darkGreen">We strive to create the most<br/>potent products we can for<br/>your healing</p>
+    </div>
+  
+</div>
+    </section>
+    <section class="section__promise">
+      <div class="promise">
+  <div class="promise__hero"><img src="./assets/hero/hero2.png" alt="hero2" loading="lazy" /></div>
+  <div class="promise__info">
+    
+
+  <div class="section__title">
+
+  <h2 class="section__title-prifix">OUR PROMISE</h2>
+  
+    <div class="section__title-spacer"></div>
+  
+  <h1 class="section__title-sufix">My Magic Healer  Code</h1>
+</div>
+    <p class="description">
+  <img style="shape-outside: url(./assets/hero/hero2.png);" class="promise__hero--mobile" src="./assets/hero/hero2.png" alt="hero2" loading="lazy" /> Mother nature has given us all the means to have a happy life here<br/>on Earth. Our mission is to strengthen the connection to wholesome<br/>healing that She provides for our planet. MyMagicHealer offers the<br/>highest quality, traditional remedies for your body and mind. We<br/>strongly believe that only in a healthy body, we can unleash the<br/>immense potential and reach the ultimate wholeness<br/>within ourselves.
+</p>
+  </div>
+</div>
+    </section>
+    <section class="section__tiles">
+      <!-- pc -->
+<div class="tiles tiles--pc">
+
+  <div class="tiles__items owl-carousel owl-carousel-tiles owl-theme">
+
+    <div class="item tiles__item" style="background: #99A287">
+      <img class="tiles__item-img" src="./assets/tiles/tiles1.png" alt="tiles1" loading="lazzy" />
+      <h1 class="tiles__item-title">Potent Herbs</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+
+    <div class="item tiles__item" style="background: #D6C197">
+      <img class="tiles__item-img" src="./assets/tiles/tiles2.png" alt="tiles2" loading="lazzy" />
+      <h1 class="tiles__item-title">Potent Herbs</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+
+    <div class="item tiles__item" style="background: #4F5544">
+      <img class="tiles__item-img" src="./assets/tiles/tiles3.png" alt="tiles3" loading="lazzy" />
+      <h1 class="tiles__item-title">Healing Salves</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+
+    <div class="item tiles__item" style="background: #B8A98C">
+      <img class="tiles__item-img" src="./assets/tiles/tiles4.png" alt="tiles4" loading="lazzy" />
+      <h1 class="tiles__item-title">shilajit</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+
+  </div>
+
+</div>
+<!-- mobile -->
+<div class="tiles tiles--mobile">
+
+  <div class="item tiles__item" style="background: #99A287">
+    <img class="tiles__item-img" src="./assets/tiles/tiles1.png" alt="tiles3" loading="lazzy" />
+    <div class="tiles__item-mobileContent">
+      <h1 class="tiles__item-title">Organic Teas</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+  </div>
+  <div class="item tiles__item" style="background: #D6C197">
+    <img class="tiles__item-img" src="./assets/tiles/tiles2.png" alt="tiles3" loading="lazzy" />
+    <div class="tiles__item-mobileContent">
+      <h1 class="tiles__item-title">Potent Herbs</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+  </div>
+  <div class="item tiles__item" style="background: #4F5544">
+    <img class="tiles__item-img" src="./assets/tiles/tiles3.png" alt="tiles3" loading="lazzy" />
+    <div class="tiles__item-mobileContent">
+      <h1 class="tiles__item-title">Healing Salves</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+  </div>
+  <div class="item tiles__item" style="background: #D6C197">
+    <img class="tiles__item-img" src="./assets/tiles/tiles4.png" alt="tiles3" loading="lazzy" />
+    <div class="tiles__item-mobileContent">
+      <h1 class="tiles__item-title">shilajit</h1>
+
+      <p class="tiles__item-description">Active Ingredients |<br/>Discover Now</p>
+    </div>
+  </div>
+
+</div>
+
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__bundles">
+      <div class="bundles">
+
+  
+
+    
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix">coming soon...</h2>
+  
+    <div class="section__title-spacer"></div>
+  
+  <h1 class="section__title-sufix">Our Magic Bundles</h1>
+</div>
+
+  
+  
+
+  <div class="bundles__items">
+
+    
+
+    
+
+      <div class="bundles__items-coomingBlock">
+        <img class="bundles__items-cooming" src="./assets/cooming.png" alt="comming" loading="lazzy" width="100%" />
+        <br><br>
+        <span class="bundles__items-coomingText">Be the first to know when we are launching our Magic Bundles!</span>
+      </div>
+
+    
+
+  </div>
+
+  <div class="bundles__button">
+
+    
+
+    
+
+      <button class="btn btn--orange">Go to profile</button>
+
+    
+  </div>
+</div>
+    </section>
+    <section class="section__reviews">
+      <div class="reviews">
+  
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix">our</h2>
+  
+    <div class="section__title-spacer"></div>
+  
+  <h1 class="section__title-sufix">Reviews</h1>
+</div>
+
+  <!-- pc -->
+  <div class="reviews__cards reviews__cards--pc">
+
+    <div class="reviews__cards-card">
+      <h5 class="reviews__cards-card__title">Chris AB</h5>
+      <p class="description">
+  Amaizingly quick shipping! I was floored with how quickly it got to me. Also, this product WORKS. I have severe chronic pain and this has offered me some relief. I’ll definitely be getting it again.
+</p>
+    </div>
+    <div class="reviews__cards-card">
+      <h5 class="reviews__cards-card__title">Joyce</h5>
+      <p class="description">
+  The eczema salve is great! I don’t like using prescription stuff on my face so this is a great alternative. It’s soothing and keeps my skin moisturized all day. I’ve recommended this to my sister, and she’s already placed an order. We love supporting small businesses.
+</p>
+    </div>
+    <div class="reviews__cards-card">
+      <h5 class="reviews__cards-card__title">Ebonee Elizabeth</h5>
+      <p class="description">
+  Love this product so much! It came quickly. The smell isn’t overpowering and it helped with my shoulder pain almost immediately. Thank you!
+</p>
+    </div>
+
+  </div>
+<!-- mobile -->
+  <div class="reviews__cards reviews__cards--mobile">
+
+    <div class="owl-carousel owl-carousel-reviews owl-theme">
+
+      <div class="item reviews__cards-card">
+        <h5 class="reviews__cards-card__title">Ebonee Elizabeth</h5>
+        <p class="description">
+  Love this product so much! It came quickly. The smell isn’t overpowering and it helped with my shoulder pain almost immediately. Thank you!
+</p>
+      </div>
+      <div class="item reviews__cards-card">
+        <h5 class="reviews__cards-card__title">Ebonee Elizabeth</h5>
+        <p class="description">
+  Love this product so much! It came quickly. The smell isn’t overpowering and it helped with my shoulder pain almost immediately. Thank you!
+</p>
+      </div>
+      <div class="item reviews__cards-card">
+        <h5 class="reviews__cards-card__title">Ebonee Elizabeth</h5>
+        <p class="description">
+  Love this product so much! It came quickly. The smell isn’t overpowering and it helped with my shoulder pain almost immediately. Thank you!
+</p>
+      </div>
+      <div class="item reviews__cards-card">
+        <h5 class="reviews__cards-card__title">Ebonee Elizabeth</h5>
+        <p class="description">
+  Love this product so much! It came quickly. The smell isn’t overpowering and it helped with my shoulder pain almost immediately. Thank you!
+</p>
+      </div>
+      
+    </div>
+
+  </div>
+  
+</div>
+    </section>
+    <section class="section__about">
+      <div class="about">
+  <div class="about__info">
+    
+
+  <div class="section__title">
+
+  <h2 class="section__title-prifix">about the store</h2>
+  
+    <div class="section__title-spacer"></div>
+  
+  <h1 class="section__title-sufix">The Story of My<br/>Magic Healer</h1>
+</div>
+    <p class="description">
+  <img style="shape-outside: url(./assets/hero/hero3.png);" class="promise__hero--mobile" src="./assets/hero/hero3.png" alt="hero2" loading="lazy" />When I was 12 years old, I used to suffer from furunculosis, a regular<br/>occurrence of abscesses. To get rid of them, I was trying different<br/>ointments prescribed by my doctor, taking antibiotics and even going<br/>through surgeries to drain the inflammation. One time, I got a big,<br/>swollen bump without any pus on my eyebrow. My grandma and I<br/>went to a doctor (once again) where he said........
+</p>
+    <div class="about__info-btn">
+      <button class="btn btn--orange">read more</button>
+    </div>
+  </div>
+  <div class="about__hero"><img src="./assets/hero/hero3.png" alt="hero3" loading="lazy" /></div>
+</div>
+
+      <br><br>
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__newArrival">
+      
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix"></h2>
+  
+  <h1 class="section__title-sufix">New Arrival</h1>
+</div>
+<div class="newArrival">
+  <div class="newArrival__preview" style="background-image: url(./assets/arrival/arrival1.jpg);"></div>
+  <div class="newArrival__content">
+
+    <div>
+      <h1 class="newArrival__content-title">Calendula & Nettle<br/>Skin Salve</h1>
+      <div class="newArrival__content-edition">Limited Edition</div>
+      <div class="newArrival__content-size">100 ml</div>
+      <div class="newArrival__content-reviews">10 Reviews</div>
+    </div>
+
+    <div class="newArrival__content-footer">
+      <h2 class="newArrival__content-price">$48</h2>
+      <div class="counter">
+  <button data-id=arrival-1 data-action="minus" class="counter__btn" style="background-image: url(./assets/counter/minus.svg)"></button>
+  <span class="arrival-1 counter__text">1</span>
+  <button data-id=arrival-1 data-action="plus" class="counter__btn" style="background-image: url(./assets/counter/plus.svg)"></button>
+</div>
+      
+      <div class="newArrival__content-btn">
+        <button class="btn btn--orange">Add to cart</button>
+        <a class="link" href=#>View product details ></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </section>
+    <section class="section__discount">
+      <div class="discount">
+  
+  <div class="section__title section__title--center">
+
+
+  <h2 class="section__title-prifix"></h2>
+  
+  <h1 class="section__title-sufix">Follow @MyMagicHealer on Instagram</h1>
+</div>
+
+  
+  <div class="discount__text">
+    <div class="discount__text-content">
+      <h3 class="discount__text-title">And get Discount 15% for next Order</h3>
+      <button class="btn btn--orange">get now</button>
+    </div>
+    <img class="discount__text-img" src="./assets/discount/gasneria.png" alt="discount" loading="lazy" height="100%" />
+  </div>
+  
+
+  
+</div>
+    </section>
+    <footer class="footer">
+
+  <div class="footer__top">
+    <div class="footer__list">
+      <h5 class="footer__list-title">Connect</h5>
+      <span class="footer__list-item"> <a class="link" href=#>Contact Us</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>FAQs</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Shipping</a> </span>
+    </div>
+    <div class="footer__list">
+      <h5 class="footer__list-title">Terms & Policies</h5>
+      <span class="footer__list-item"> <a class="link" href=#>Refunds & Shipping Policy</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Privacy Policy</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Terms & Conditions</a> </span>
+    </div>
+    <div class="footer__list">
+      <h5 class="footer__list-title"></h5>
+      <span class="footer__list-item"> <a class="link" href=#>Blog</a> </span>
+      <span class="footer__list-item"> <a class="link" href=#>Sign Up & Get 15% OFF Your First Purchase</a> </span>
+      <span class="footer__list-item footer__list-item--socials">
+        <a href="#" target="_blank"><img src="./assets/socials/instagram.svg" alt="instagram" loading="lazzy" /></a>
+        <a href="#" target="_blank"><img src="./assets/socials/pin.svg" alt="pin" loading="lazzy" /></a>
+        <a href="#" target="_blank"><img src="./assets/socials/tiktok.svg" alt="tiktok" loading="lazzy" /></a>
+      </span>
+    </div>
+  </div>
+  <div class="footer__down">
+    <div class="footer__list">
+      <h5 class="footer__list-title">About the shop</h5>
+      <span class="footer__list-item"> <span class="link">My Magic Healer Store we believe that healthy skin is<br/>the most beautiful skin.</span> </span>
+      <div class="footer__copyright">© My Magic Healer Store</div>
+    </div>
+    <div class="footer__list footer__list--cards">
+      <img src="./assets/FooterCards/amazon.svg" alt="amazon" loading="lazzy" />
+      <img src="./assets/FooterCards/paypal.svg" alt="paypal" loading="lazzy" />
+      <img src="./assets/FooterCards/stripe.png" alt="stripe" loading="lazzy" />
+    </div>
+  </div>
+
+</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.productCard
+  display: flex
+  flex-direction: column
+  max-width: 177px
+
+  &-img
+    width: 12.7142rem
+    height: 12.7142rem
+    @media ( max-width: $mobile )
+      width: 130px
+
+  &-title
+    min-height: 2.5714rem
+    margin-top: 1.0714rem
+
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.8571rem
+    line-height: 1rem
+    text-transform: uppercase
+
+    color: $Font_DarkGreen
+
+    @media ( max-width: $mobile )
+      font-size: 9px
+      line-height: 13px
+      letter-spacing: 1.5px
+      margin-top: 7px
+      width: 11.8rem
+
+  &-reviews
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.6428rem
+    line-height: 0.7142rem
+    letter-spacing: 0.0714rem
+
+    color: $Font_DarkGreen
+
+    @media ( max-width: $mobile )
+      font-size: 5px
+      line-height: 10px
+      letter-spacing: 1px
+
+  &-price
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.9285rem
+    line-height: 1.5rem
+    letter-spacing: 0.1857rem
+    text-transform: uppercase
+
+    color: $Font_DarkGreen
+
+    @media ( max-width: $mobile )
+      font-size: 11px
+      line-height: 16px
+      letter-spacing: 2.6px

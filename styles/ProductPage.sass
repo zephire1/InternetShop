@@ -1,0 +1,306 @@
+@import './inc/_colors'
+@import './inc/_points'
+@import './inc/_mixin'
+
+.productPage
+
+  &__header
+    display: flex
+    justify-content: center
+
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    &-images
+      display: flex
+
+  &__imageList
+    display: flex
+    flex-direction: column
+    grid-gap: 20px
+    margin-right: 19px
+    img
+      width: 75px
+      height: 75px
+
+  &__image
+    position: relative
+    img
+      width: 461px
+      height: 447px
+
+    &-dots
+      position: absolute
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: flex
+      justify-content: center
+      margin-top: 30px
+      grid-gap: 12px
+      button
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background: $Buttons_RadioButton
+        &.active
+          background: $Font_DarkGreen
+
+  &__header-info
+    margin-left: 58px
+
+  &-title
+    position: relative
+    margin-bottom: 20px
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 33px
+    line-height: 37px
+    letter-spacing: 0.026em
+    text-transform: uppercase
+    width: fit-content
+    max-width: 380px
+    word-break: break-word
+
+    color: $DarkGreen
+
+    img
+      position: absolute
+      right: -55px
+      top: -17px
+
+  &-description
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 23px
+    letter-spacing: 1px
+
+    color: $Font_DarkGreen
+
+    white-space: pre-line
+
+  &-price
+    border-bottom: 1px solid $Lines
+    min-width: 221px
+    max-width: 235px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+    span
+      color: $Font_DarkGreen
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+    span:nth-child(1)
+      font-size: 17px
+      line-height: 20px
+      letter-spacing: 2.8px
+    span:nth-child(2)
+      font-size: 12px
+      line-height: 14px
+
+  &-template
+    display: flex
+    grid-gap: 4px
+    min-width: 221px
+    max-width: 235px
+
+    &-item
+      height: 35px
+      min-width: 65px
+      border: 1px solid $Lines
+      padding: 4px 13px
+      display: flex
+      flex-direction: column
+      &.active
+        background: $Lines
+      small,
+      span
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        pointer-events: none
+
+      small
+        font-size: 7px
+        line-height: 10px
+        letter-spacing: 1px
+        color: $Font_blog
+        margin-bottom: 2px
+
+      span
+        font-size: 12px
+        line-height: 14px
+        color: $Font_DarkGreen
+
+    .counter
+      height: 35px
+      margin-left: auto
+
+  &-disclaimer
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 9px
+    line-height: 10px
+    letter-spacing: 1px
+    color: $Font_green
+    margin: 30px 0
+
+  &-buttons
+    display: flex
+    justify-content: space-between
+    button
+      height: 45px
+    button:nth-child(2)
+      font-size: 12px
+
+  &__tabs
+    // margin-top: 180px
+    margin: 180px 134px 0 134px
+
+    &-ul
+      display: flex
+      justify-content: space-between
+      list-style: none
+      border-bottom: 1px solid $Lines
+      button
+        width: 100%
+        text-align: center
+
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 36px
+        letter-spacing: 4.4px
+        text-transform: uppercase
+
+        color: $Font_blog
+
+    &-li
+      width: 100%
+      text-align: center
+      button
+        text-align: center
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 36px
+        letter-spacing: 4.4px
+        text-transform: uppercase
+
+        color: $Font_blog
+
+      &.active
+        position: relative
+        color: $Font_DarkGreen
+        &::after
+          position: absolute
+          left: 0
+          bottom: 0
+          width: 100%
+          height: 2px
+          background: $DarkGreen
+          content: ''
+
+  &__use
+    margin-top: 100px
+
+    &-grid
+      display: grid
+      grid-template-columns: 1fr 1fr
+
+      grid-gap: 0 48px
+      margin: 50px 42px 100px 42px
+
+  &__like
+
+    &-title
+      text-align: center
+
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 22px
+      line-height: 36px
+      letter-spacing: 4.4px
+      text-transform: uppercase
+
+      color: $Font_DarkGreen
+
+      margin-bottom: 47px
+
+    .productsList__list
+      display: flex
+      justify-content: center
+
+.tab
+  margin-top: 40px
+  display: none
+  &.active
+    display: block
+
+  &__title,
+  &__description
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+
+  &__title
+    margin-bottom: 10px
+
+    font-size: 14px
+    line-height: 23px
+    letter-spacing: 1px
+
+    color: $Font_DarkGreen
+    white-space: pre-line
+
+  &__description
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 1px
+    opacity: .8
+    width: 50%
+    text-align: start
+
+    color: $Font_green
+
+  &__ul
+    list-style: none
+    display: flex
+    flex-direction: column
+    align-items: self-start
+
+    button
+      margin-bottom: 0.7142rem
+
+  &__li
+    cursor: pointer
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 23px
+    letter-spacing: 1px
+
+    display: flex
+    align-items: center
+
+    color: $Font_DarkGreen
+
+    img
+      margin-left: 9px
+      &.active
+        transform: rotate(180deg)
+
+    &-open
+      display: none
+      &.show
+        display: block

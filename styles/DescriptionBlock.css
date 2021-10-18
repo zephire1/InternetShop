@@ -1,0 +1,16 @@
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1428rem;
+  line-height: 1.3571rem;
+  white-space: pre-line;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .description {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

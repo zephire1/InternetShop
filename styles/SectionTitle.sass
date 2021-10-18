@@ -1,0 +1,38 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.section__title
+  @media ( max-width: $mobile )
+    text-align: center
+  &--center
+    *
+      text-align: center
+
+  &-prifix
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.9285rem
+    line-height: 1.5rem
+    letter-spacing: 0.1857rem
+    text-transform: uppercase
+
+    color: $Font_DarkGreen
+
+  &-sufix
+    font-family: 'EB Garamond', sans-serif
+    font-style: italic
+    font-weight: normal
+    font-size: 3.4285rem
+    line-height: 1.5714rem
+    text-transform: capitalize
+
+    color: $Font_green
+
+    @media ( max-width: $mobile )
+      font-size: 28px
+      line-height: 27px
+      margin: 0 17px
+
+  &-spacer
+    margin-top: 1.0714rem

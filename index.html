@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+    <section class="section__MainSlider">
+      @@include('./components/MainSlider.html')
+    </section>
+    <section class="section__bestsellers">
+      @@include('./components/SectionTitle.html', {
+        prifix: 'shop',
+        sufix: 'Our Bestsellers',
+        center: true
+      })
+
+      @@include('./components/BestsellersSlider.html')
+
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__benefits">
+      @@include('./components/RowItems.html', {
+        items: [{
+          color: 'green',
+          img: './assets/benefits/benefits1.png',
+          text: 'We choose only the highest<br/>quality ingredients'
+        },{
+          color: 'beige',
+          img: './assets/benefits/benefits2.png',
+          text: 'All of our products are made<br/>from natural ingredients'
+        },{
+          color: 'darkGreen',
+          img: './assets/benefits/benefits3.png',
+          text: 'We strive to create the most<br/>potent products we can for<br/>your healing'
+        }]
+      })
+    </section>
+    <section class="section__promise">
+      @@include('./components/OurPromise.html')
+    </section>
+    <section class="section__tiles">
+      @@include('./components/TilesCorusel.html')
+
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__bundles">
+      @@include('./components/Bundles.html', {
+        cooming: true
+      })
+    </section>
+    <section class="section__reviews">
+      @@include('./components/OurReviews.html')
+    </section>
+    <section class="section__about">
+      @@include('./components/About.html')
+
+      <br><br>
+      <hr color="#E5EAED" />
+    </section>
+    <section class="section__newArrival">
+      @@include('./components/NewArrival.html', {
+        img: './assets/arrival/arrival1.jpg',
+        title: 'Calendula & Nettle<br/>Skin Salve',
+        edition: 'Limited Edition',
+        size: '100 ml',
+        reviews: 10,
+        price: '$48'
+      })
+    </section>
+    <section class="section__discount">
+      @@include('./components/Discount.html', {
+        type: 'text'
+      })
+    </section>
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

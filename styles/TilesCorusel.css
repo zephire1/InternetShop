@@ -1,0 +1,138 @@
+.tiles {
+  margin-bottom: 3.5714rem;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .tiles--pc {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .tiles--pc {
+    display: none;
+  }
+}
+
+.tiles--mobile {
+  display: none;
+  margin: 0 20px;
+}
+
+@media (max-width: 425px) {
+  .tiles--mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tiles--mobile {
+    display: none;
+  }
+}
+
+.tiles__controll {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5714rem;
+}
+
+.tiles__controll-btn {
+  width: 1.7857rem;
+  height: 1.7857rem;
+}
+
+.tiles__items {
+  overflow: hidden;
+  display: grid;
+  grid-auto-columns: 33.333%;
+  grid-auto-flow: column;
+}
+
+.tiles__items .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5714rem;
+}
+
+.tiles__item {
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .tiles__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 30px;
+  }
+  .tiles__item-mobileContent {
+    width: 80%;
+  }
+}
+
+.tiles__item-img {
+  margin-top: 10.4285rem;
+  max-height: 8.5714rem;
+}
+
+@media (max-width: 425px) {
+  .tiles__item-img {
+    order: 1;
+    margin-top: unset;
+    max-width: 85px;
+  }
+}
+
+.tiles__item-title {
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.4285rem;
+  line-height: 1.5714rem;
+  text-transform: capitalize;
+  color: #FFFCFC;
+  margin-bottom: 4.6428rem;
+  margin-top: 3.2142rem;
+}
+
+@media (max-width: 425px) {
+  .tiles__item-title {
+    font-size: 23px;
+    line-height: 27px;
+    margin-bottom: 13px;
+    text-align: start;
+  }
+}
+
+.tiles__item-description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  line-height: 1rem;
+  letter-spacing: 0.1714rem;
+  text-transform: uppercase;
+  color: #FFFCFC;
+  padding-bottom: 5.0714rem;
+}
+
+@media (max-width: 425px) {
+  .tiles__item-description {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-align: start;
+  }
+}

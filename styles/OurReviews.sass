@@ -1,0 +1,88 @@
+@import './inc/_colors'
+@import './inc/_points'
+@import './inc/_mixin'
+
+.reviews
+  margin: 0 2.8571rem
+  position: relative
+  @media ( max-width: $mobile )
+    margin: 0 0
+
+  .owl-nav
+    position: absolute
+    top: 42%
+    width: 100%
+    padding: 0 20px
+    justify-content: space-between  
+    display: none
+    @media ( max-width: $mobile )
+      display: flex
+    
+    button
+      background: $Buttons_dark
+      border-radius: 100%
+      width: 45px
+      height: 45px
+      @media ( max-width: $mobile )
+        width: 25px
+        height: 25px
+      &:hover
+        background: $Buttons_light
+
+      img
+        transform: scale(.8)
+        @media ( max-width: $mobile )
+          transform: scale(.55)
+
+  .owl-dots
+    @include sliderDots()
+
+  &__cards
+    display: flex
+    grid-gap: 4rem
+    margin-top: 5rem
+    &--pc
+      @media ( min-width: $desktop )
+        display: flex
+      @media (max-width: $mobile)
+        display: none
+
+    &--mobile
+      display: none
+      margin-top: 25px
+      .owl-item
+        display: flex
+        justify-content: center
+
+      .owl-carousel
+        .owl-stage-outer
+          .owl-stage
+            .owl-item.active
+              transition: .3s
+              &:nth-child(1)
+                transform: scale(0.7)
+                
+      @media ( max-width: $mobile )
+        display: block
+      @media (min-width: $desktop)
+        display: none
+
+    &-card
+      padding: 3.0714rem
+      border: 0.1428rem solid $MainGreen
+      width: 50%
+      @media ( max-width: $mobile )
+        width: 208px
+        padding: 30px 20px
+
+      &__title
+        font-family: 'EB Garamond', sans-serif
+        font-style: italic
+        font-weight: normal
+        font-size: 1.8571rem
+        line-height: 1.5714rem
+        text-transform: capitalize
+
+        color: $Font_green
+        
+        margin-bottom: 0.7142rem

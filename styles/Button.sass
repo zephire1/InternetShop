@@ -1,0 +1,50 @@
+@import './inc/_colors'
+
+.btn
+
+  &--orange
+    background: $Buttons_light
+    border-radius: 2.1428rem
+
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.8571rem
+    line-height: 1rem
+    text-align: center
+    letter-spacing: 0.1714rem
+    text-transform: uppercase
+
+    color: $Font_white
+
+    padding: 1.0714rem 4.1428rem
+
+    &:hover
+      background: $Buttons_dark
+
+    &:disabled
+      background: $Buttons_RadioButton
+      color: $Font_white
+      cursor: no-drop
+
+  &--orangeOutline
+    border-radius: 2.1428rem
+    border: 0.071rem solid #C9A641
+
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.5571rem
+    line-height: 1rem
+    text-align: center
+    letter-spacing: 0.1714rem
+    text-transform: uppercase
+  
+    color: #C9A641
+
+    padding: 0.7514rem 4.1428rem
+
+    &:disabled
+      border: 0.071rem solid $Buttons_RadioButton
+      color: $Buttons_RadioButton
+      cursor: no-drop

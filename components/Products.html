@@ -1,0 +1,32 @@
+<div class="products">
+
+  <div class="products__items">
+
+    @@include('./ProductCard.html', {
+      img: './assets/Products/product1.jpg',
+      title: 'Immunity Boost',
+      reviews: 4,
+      price: 12
+    })
+    @@include('./ProductCard.html', {
+      img: './assets/Products/product2.jpg',
+      title: 'morning energy',
+      reviews: 1,
+      price: 12
+    })
+    @@include('./ProductCard.html', {
+      img: './assets/Products/product3.jpg',
+      title: 'Very Calming',
+      reviews: 3,
+      price: 12
+    })
+
+  </div>
+
+  <div class="products__button">
+    @@include('./Button.html', {
+      text: 'PRODUCTS TO heal >',
+      type: 'orange'
+    })
+  </div>
+</div>

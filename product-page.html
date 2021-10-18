@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+
+    <section class="section__productPage">
+
+      <div class="productPage__header">
+        <div class="productPage__header-images">
+          <div class="productPage__imageList">
+            <img src="./assets/Products/1.png" alt="img1" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img2" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img3" loading="lazy" />
+            <img src="./assets/Products/1.png" alt="img4" loading="lazy" />
+          </div>
+          <div class="productPage__image">
+            <img src="./assets/Products/product6.jpg" alt="img1" loading="lazy" />
+            <div class="productPage__image-dots">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
+        <div class="productPage__header-info">
+          <div>
+            <h1 class="productPage-title">Propolis & Beeswax<br />Potent Ointment <img src="./assets/organic.svg" alt="organic" loading="lazy" /></h1>
+            <p class="productPage-description">
+              Salve that is known to help with 100 problems.<br/>
+              It is very potent, powerful and universal product<br/>
+              to use for anything that is inflamed.
+            </p>
+          </div>
+          <div>
+            <div class="productPage-price">
+              <span>$ 33.00</span>
+              <span>100mL</span>
+            </div>
+            <div class="productPage-template">
+              <button class="productPage-template-item active">
+                <small>50mL</small>
+                <span>$ 21.00</span>
+              </button>
+              <button class="productPage-template-item">
+                <small>100mL </small>
+                <span>$ 33.00</span>
+              </button>
+
+              @@include('./components/Counter.html', {
+                id: 'adawd1'
+              })
+            </div>
+            <p class="productPage-disclaimer">
+              Disclaimer: The product has not been evaluated by Canada health and the FDA and is not<br/>intended to treat, diagnose, cure, or prevent any disease.
+            </p>
+            <div class="productPage-buttons">
+              @@include('./components/Button.html', {
+                text: 'Add to cart',
+                type: 'orange'
+              })
+              @@include('./components/Button.html', {
+                text: 'pre-order',
+                type: 'orangeOutline'
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productPage__tabs">
+        <ul class="productPage__tabs-ul">
+          <button><li data-id="tab-1" class="productPage__tabs-li active">about</li></button>
+          <button><li data-id="tab-2" class="productPage__tabs-li">Ingredients</li></button>
+          <button><li data-id="tab-3" class="productPage__tabs-li">Reviews (0)</li></button>
+        </ul>
+
+        <section class="tab tab-1 active">
+          <h1 class="tab__title">This 100% organic blend of serenity is good whenever you<br/>need some tranquility. Enjoy the calming minty, herbal flavour<br/>for your body and mind.</h1>
+          <p class="tab__description">
+            Healing the body takes time so consistency is a key. Healing the body is also not one product<br/>
+            job, dis-ease requires a complex and holistic approach to come to the ultimate solution.<br/>
+            IMPORTANT TO UNDERSTAND: Herbs will not not be a solution to all of the problems<br/>
+            but the regular consumption of the right herbs may improve your physical and mental state.
+          </p>
+        </section>
+        <section class="tab tab-2">
+          <ul class="tab__ul">
+            
+            <button class="openProductQues" data-id="productList-1">
+              <li class="tab__li">
+                organic sunflower oil
+                <img data-id="productList-1" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+            
+            <button class="openProductQues" data-id="productList-2">
+              <li class="tab__li">
+                organic safflower oil
+                <img data-id="productList-2" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+            <button class="openProductQues" data-id="productList-3">
+              <li class="tab__li">
+                hemp oil
+                <img data-id="productList-3" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+            <button class="openProductQues" data-id="productList-4">
+              <li class="tab__li">
+                beeswax
+                <img data-id="productList-4" src="./assets/OpenMenu.svg" class="tab__li-btn" alt="open" loading="lazy" />
+              </li>
+              <p class="tab__description tab__li-open productList-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequuntur culpa dolore distinctio, doloremque nesciunt inventore tenetur totam suscipit?
+              </p>
+            </button>
+
+          </ul>
+        </section>
+        
+      </div>
+      <div class="productPage__use">
+        @@include('./components/SectionTitle.html', {
+          prifix: '',
+          sufix: 'How to use Propolis & Beeswax Potent Ointment',
+          center: true
+        })
+        <div class="productPage__use-grid">
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-1'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-2'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-3'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-4'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-5'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-6'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-7'
+          })
+          @@include('./components/FAQitem.html', {
+            title: '1. What is your shipping standard?',
+            description: 'Beeswax & Propolis Magic Salve speeds up the healing process for burns 3x faster. The egg yolk oil that is in the salve is scientifically proven to heal even 3rd degree burns.',
+            id: 'FAQ-8'
+          })
+        </div>
+        
+      </div>
+      <section class="section__benefits">
+        @@include('./components/SectionTitle.html', {
+          prifix: '',
+          sufix: 'Instruction',
+          center: true
+        })
+        <br><br>
+        @@include('./components/RowItems.html', {
+          items: [{
+            color: 'green',
+            img: './assets/Instruction/clock.svg',
+            text: 'We choose only the highest<br/>quality ingredients'
+          },{
+            color: 'beige',
+            img: './assets/Instruction/mug.svg',
+            text: 'All of our products are made<br/>from natural ingredients'
+          },{
+            color: 'darkGreen',
+            img: './assets/Instruction/spoon.svg',
+            text: 'We strive to create the most<br/>potent products we can for<br/>your healing'
+          }]
+        })
+        <br><br>
+      </section>
+
+      <div class="productPage__like">
+        <h2 class="productPage__like-title">You may also like</h2>
+        <div class="productsList__list">
+          @@include('./components/ProductCard.html', {
+            img: './assets/Products/product1.jpg',
+            title: 'Immunity Boost',
+            reviews: 4,
+            price: 12
+          })
+          @@include('./components/ProductCard.html', {
+            img: './assets/Products/product2.jpg',
+            title: 'Immunity Boost',
+            reviews: 4,
+            price: 12
+          })
+          @@include('./components/ProductCard.html', {
+            img: './assets/Products/product3.jpg',
+            title: 'Immunity Boost',
+            reviews: 4,
+            price: 12
+          })
+          @@include('./components/ProductCard.html', {
+            img: './assets/Products/product3.jpg',
+            title: 'Immunity Boost',
+            reviews: 4,
+            price: 12
+          })
+        </div>
+      </div>
+      <br><br><br>
+      <hr color="#E5EAED" />
+
+    </section>
+
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@import './inc/_colors'
+
+.blogItem
+  width: 100%
+  height: 100%
+
+  &__preview
+    width: 100%
+    max-height: 258px
+    object-fit: cover
+
+  &__tags
+    display: flex
+    margin-top: 9px
+
+    span
+      margin-right: 15px
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 22px
+      letter-spacing: 0.025em
+      text-transform: uppercase
+      color: #CAA74F
+      &:nth-last-child()
+        margin-right: none
+
+  &__title
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: #4F5544
+    margin-top: 10px
+
+  &__description
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    color: $Font_blog
+    opacity: 0.8
+    margin-top: 9px
+
+  &__link
+    margin-top: 30px
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 21px
+    letter-spacing: 2.6px
+    color: #4F5544
+    display: block
+    text-align: center

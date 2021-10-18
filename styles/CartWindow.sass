@@ -1,0 +1,170 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+$Padding: 2.6428rem
+
+.CartWindow
+  position: fixed
+  top: 0
+  right: 0
+  width: 100vw
+  height: 100vh
+  z-index: 99
+  backdrop-filter: blur(10px)
+  display: none
+  &.show
+    display: block
+
+  &__content
+    height: 100vh
+    width: 37.7142rem
+    background: $Background
+    float: right
+    z-index: 98
+    padding: 2.8571rem 0 2.8571rem 0
+    display: flex
+    flex-direction: column
+    overflow-y: scroll
+    &::-webkit-scrollbar
+      width: 0
+
+    @media ( max-width: $tablet )
+      width: 363px
+    @media ( max-width: $mobile )
+      width: 100vw
+      padding: 0 21px
+
+    &-trigger
+      position: fixed
+      top: 0
+      left: 0
+      width: 100vw
+      height: 100vh
+      background: rgba(79, 85, 68, 0.65)
+      z-index: -1
+      cursor: pointer
+
+  &__header
+    display: flex
+    justify-content: space-between
+    padding: 0 $Padding
+
+    &-title
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.5714rem
+      line-height: 2.5714rem
+      letter-spacing: 0.3142rem
+      text-transform: uppercase
+
+      display: flex
+      align-items: center
+
+      color: $Font_DarkGreen
+
+      @media ( max-width: $mobile )
+        font-size: 13px
+        line-height: 21px
+        letter-spacing: 2.6px
+
+      .shape
+        width: 0.3571rem
+        height: 0.3571rem
+        margin: 0 0.7857rem
+        background: $DarkGreen
+        border-radius: 100%
+
+  &__natif
+    margin-left: $Padding
+    margin-right: $Padding
+    margin-top: 0.7142rem
+    padding: 0.5rem 0.3571rem
+    text-align: center
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 0.6428rem
+    line-height: 0.7857rem
+    letter-spacing: 0.1428rem
+    text-transform: uppercase
+
+    color: $Font_white
+    background: $MainGreen
+    @media ( max-width: $mobile )
+      margin-left: unset
+      margin-right: unset
+
+  &__footer
+    padding: 0 $Padding
+
+    &-total
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.5714rem
+      line-height: 2.5714rem
+      letter-spacing: 0.3142rem
+      text-transform: uppercase
+
+      color: $DarkGreen
+
+    &-info
+      margin-top: 0.7142rem
+
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 0.8571rem
+      line-height: 1rem
+      letter-spacing: 0.1714rem
+      text-transform: uppercase
+
+      color: $DarkGreen
+
+    &-total,
+    &-info
+      display: flex
+      justify-content: space-between
+
+    &-btn
+      width: 100%
+      margin-top: 1.4285rem
+      button
+        width: 100%
+
+    &-coupon
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+
+      .input,
+      button
+        width: 50%
+
+      .input
+        margin-right: 0.3571rem
+      button
+        margin-left: 0.3571rem
+
+  &__takes
+    padding: 2.8571rem $Padding
+
+  &__recommended
+    padding: 2.8571rem $Padding
+
+    &-title
+      margin-bottom: 1.1428rem
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.5714rem
+      line-height: 2.5714rem
+      letter-spacing: 0.3142rem
+      text-transform: uppercase
+
+      color: $DarkGreen
+    &-items
+      .cartItem
+        padding: 2.8571rem $Padding
+        border: 0.0714rem solid $Lines

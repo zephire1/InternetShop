@@ -1,0 +1,136 @@
+/* RESER */
+@import url('../styles/Reset.css');
+/* /RESET */
+
+/* default */
+@import url('../styles/Default.css');
+/* /default */
+
+/* header */
+@import url('../styles/Header.css');
+@import url('../styles/HeaderMessage.css');
+@import url('../styles/HeaderMain.css');
+@import url('../styles/HeaderNav.css');
+@import url('../styles/HeaderNavMobile.css');
+/* /Header */
+
+/* footer */
+@import url('../styles/Footer.css');
+/* /footer */
+
+/* slider */
+@import url('../styles/MainSlider.css');
+@import url('../styles/SliderDots.css');
+/* /slider */
+
+/* button */
+@import url('../styles/Button.css');
+/* /button */
+
+/* Input */
+@import url('../styles/Input.css');
+/* /Input */
+
+/* SectionTitle */
+@import url('../styles/SectionTitle.css');
+/* /SectionTitle */
+
+/* rowItems */
+@import url('../styles/RowItems.css');
+/* /rowItems */
+
+/* OurPromise */
+@import url('../styles/OurPromise.css');
+/* /OurPromise */
+
+/* DescriptionBlock */
+@import url('../styles/DescriptionBlock.css');
+/* /DescriptionBlock */
+
+/* Bundles */
+@import url('../styles/Bundles.css');
+/* /Bundles */
+
+/* ProductCard */
+@import url('../styles/ProductCard.css');
+/* /ProductCard */
+
+/* OurReviews */
+@import url('../styles/OurReviews.css');
+/* /OurReviews */
+
+/* About */
+@import url('../styles/About.css');
+/* /About */
+
+/* NewArrival */
+@import url('../styles/NewArrival.css');
+/* /NewArrival */
+
+/* Link */
+@import url('../styles/Link.css');
+/* /Link */
+
+/* Counter */
+@import url('../styles/Counter.css');
+/* /Counter */
+
+/* Discount */
+@import url('../styles/Discount.css');
+/* /Discount */
+
+/* TilesCorusel */
+@import url('../styles/TilesCorusel.css');
+/* /TilesCorusel */
+
+/* ShopCards */
+@import url('../styles/ShopCards.css');
+/* /ShopCards */
+
+/* Products */
+@import url('../styles/Products.css');
+/* /Products */
+
+/* Banner */
+@import url('../styles/Banner.css');
+/* /Banner */
+
+/* ProductsList */
+@import url('../styles/ProductsList.css');
+/* /ProductsList */
+
+/* ShopTitle */
+@import url('../styles/ShopTitle.css');
+/* /ShopTitle */
+
+/* BestsellersSlider */
+@import url('../styles/BestsellersSlider.css');
+/* /BestsellersSlider */
+
+/* CartWindow */
+@import url('../styles/CartWindow.css');
+/* /CartWindow */
+
+/* CartItem */
+@import url('../styles/CartItem.css');
+/* /CartItem */
+
+/* FAQcontainer */
+@import url('../styles/FAQcontainer.css');
+/* /FAQcontainer */
+
+/* FAQitem */
+@import url('../styles/FAQitem.css');
+/* /FAQitem */
+
+/* ProductPage */
+@import url('../styles/ProductPage.css');
+/* /ProductPage */
+
+/* MobileFlyCart */
+@import url('../styles/MobileFlyCart.css');
+/* /MobileFlyCart */
+
+/* BlogItem */
+@import url('../styles/BlogItem.css');
+/* /BlogItem */

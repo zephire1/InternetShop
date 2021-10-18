@@ -1,0 +1,116 @@
+@import './inc/_colors'
+@import './inc/_points'
+@import './inc/_mixin'
+
+.slider
+  height: 36.8571rem
+  background: $MainScreenBackground
+  margin: 0 2.8571rem 7.1428rem 2.8571rem
+  position: relative
+  overflow: hidden
+
+  @media ( max-width: $tablet )
+    height: 39.4285rem
+
+  @media ( max-width: $mobile )
+    height: 100%
+    overflow: unset
+
+  .item
+    @media ( max-width: $mobile )
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+    
+
+  &.owl-carousel
+    width: unset!important
+  .owl-stage-outer
+    height: 100%
+    .owl-stage
+      height: 100%
+      .owl-item
+        height: 100%
+        .item
+          height: 100%
+
+  .owl-dots
+    @include sliderDots()
+
+  &__content
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 6.7142rem
+
+    @media ( max-width: $tablet )
+      padding-left: 2.5rem
+
+    @media ( max-width: $mobile )
+      padding-left: unset
+
+    &-title
+      margin-bottom: 1.4285rem
+
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.1428rem
+      line-height: 1.3571rem
+      letter-spacing: 0.3142rem
+      text-transform: uppercase
+
+      color: $Font_white
+
+      @media ( max-width: $mobile )
+        font-size: 9px
+        line-height: 11px
+        letter-spacing: 2px
+        text-align: center
+
+    &-description
+      font-family: 'EB Garamond', sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 4.7857rem
+      line-height: 3.5714rem
+      text-transform: capitalize
+
+      color: $Font_white
+
+      width: 60%
+      max-width: 51%
+
+      @media (min-width: $desktop)
+        max-width: 39%
+
+      @media ( max-width: $mobile )
+        font-size: 32px
+        line-height: 27px
+        width: 100%
+        max-width: 100%
+        text-align: center
+
+    &-btn
+      margin-top: 3.7142rem
+      @media ( max-width: $mobile )
+        text-align: center
+        margin-top: 20px
+        margin-bottom: 25px
+        button
+          width: 80%
+
+  &__hero
+    position: absolute
+    right: 0
+    top: 0
+
+    @media ( max-width: $tablet )
+      width: 28.4285rem
+
+    @media ( max-width: $mobile )
+      position: relative
+      order: -1
+      width: 144px

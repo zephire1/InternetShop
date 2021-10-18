@@ -1,0 +1,26 @@
+<div class="cartItem">
+
+  <img src=@@img alt="img" class="cartItem__preview" loading="lazzy">
+  <div class="cartItem__info">
+
+    <div class="cartItem__top">
+      <h1 class="cartItem__top-title">@@title</h1>
+      <div class="cartItem__top-action">
+        @@if (action === 'remove') {
+          <button>remove <img src="./assets/close--darkSmall.svg" alt="remove" loading="lazy" /></button>
+        }
+        @@if (action === 'add') {
+          <button><img src="./assets/addCart.svg" alt="add" loading="lazy" /></button>
+        }
+      </div>
+    </div>
+    <div class="cartItem__bottom">
+      <span class="cartItem__bottom-price">@@price</span>
+      @@include('./Counter.html', {
+        id: '@@id'
+      })
+    </div>
+
+  </div>
+
+</div>

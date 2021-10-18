@@ -1,0 +1,80 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.header__nav
+  list-style: none
+  display: flex
+  justify-content: center
+  grid-gap: 2.7142rem
+  margin-top: 0.8571rem
+  @media ( max-width: $mobile )
+    display: none
+
+  &-item
+    transition: .3s
+    position: relative
+    &:hover > .nav__item-dropDawn
+      transition: .3s
+      opacity: 1
+      display: block
+
+    img
+      margin-left: 0.4285rem
+
+    a,
+    button
+      text-decoration: none
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 0.9285rem
+      line-height: 1.5rem
+      letter-spacing: 0.1857rem
+      text-transform: uppercase
+
+      color: $Font_DarkGreen
+
+    .nav__item
+      position: relative
+
+      &-title
+        display: flex
+        align-items: center
+      &-dropDawn
+        display: none
+        opacity: 0
+
+        position: absolute
+        padding: 0.9285rem
+        top: 2.5rem
+        background: $Background
+        filter: drop-shadow(0.0714rem 0.0714rem 1.7857rem rgba(79, 85, 68, 0.2))
+
+        list-style: none
+        z-index: 2
+        width: 100%
+
+        &::after
+          position: absolute
+          left: calc(50% - 0.2142rem)
+          top: -0.2142rem
+          width: 1.7857rem
+          height: 1.7857rem
+          background: $Background
+          content: ''
+          transform: rotate(45deg) translate(-50%, 0)
+          z-index: 1
+
+        li
+          max-width: 6.4285rem
+          word-break: break-word
+          a
+            font-family: 'Roboto', sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 0.6428rem
+            line-height: 0.9285rem
+            letter-spacing: 0.1071rem
+            text-transform: uppercase
+
+            color: $Font_DarkGreen

@@ -1,0 +1,75 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 177px;
+}
+
+.productCard-img {
+  width: 12.7142rem;
+  height: 12.7142rem;
+}
+
+@media (max-width: 425px) {
+  .productCard-img {
+    width: 130px;
+  }
+}
+
+.productCard-title {
+  min-height: 2.5714rem;
+  margin-top: 1.0714rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .productCard-title {
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.5px;
+    margin-top: 7px;
+    width: 11.8rem;
+  }
+}
+
+.productCard-reviews {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6428rem;
+  line-height: 0.7142rem;
+  letter-spacing: 0.0714rem;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .productCard-reviews {
+    font-size: 5px;
+    line-height: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+.productCard-price {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9285rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1857rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .productCard-price {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2.6px;
+  }
+}

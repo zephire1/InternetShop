@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/Head.html', {
+    title: 'Название сайта'
+  })
+<body>
+  <main class="main">
+    @@include('./components/Header.html')
+    <section class="section__checkout">
+      <div class="content">
+        <div class="page__title">checkout</div>
+        <div class="body">
+          <div class="left">
+            <div class="left__header">
+              Billing details
+              <div class="left__header-login">
+                Have an account?
+                <a href="#">Log in</a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="title">your order</div>
+            <div class="product">
+              <div class="product__title">Product</div>
+              <div class="product__card">
+                <img class="product__card-img" src="./assets/Products/product1.jpg" width="72" height="72" alt="img" loading="lazy" />
+                <h1 class="product__card-title">Beeswax & Propolis magic salve x1</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/><br/>
+      <hr color="#E5EAED" />
+    </section>
+    @@include('./components/Footer.html')
+  </main>
+</body>
+</html>

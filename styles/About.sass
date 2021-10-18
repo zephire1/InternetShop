@@ -1,0 +1,50 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.about
+  display: flex
+  justify-content: center
+
+  &__hero
+    margin-left: 4.2857rem
+    display: none
+    @media ( min-width: $mobile )
+      display: block
+    @media ( max-width: $mobile )
+      order: 1
+      img
+        width: 110px
+
+    &--mobile
+      display: none
+      width: 110px
+      float: right
+      margin-top: 80px
+      @media ( max-width: $mobile )
+        display: block
+
+  &__info
+    width: 40%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @media ( max-width: $mobile )
+      margin: 0 50px
+      width: 100%
+
+      .description
+        br
+          display: none
+
+
+    .section__title-sufix
+      line-height: 3.0714rem
+
+    .section__title
+      margin-bottom: 3.0714rem
+
+    &-btn
+      margin-top: 1.0714rem
+      @media ( max-width: $mobile )
+        button
+          width: 100%

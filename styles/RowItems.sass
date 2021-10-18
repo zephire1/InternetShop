@@ -1,0 +1,43 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.rowItems
+  margin: 0px 11.4285rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  @media ( max-width: $tablet )
+    grid-gap: 2.5rem
+    margin: 0 1.7857rem
+
+  @media ( max-width: $mobile )
+    flex-wrap: wrap
+    justify-content: center
+
+  &__item
+    width: 50%
+
+    &-img
+      height: 12.6428rem
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        width: 12rem
+
+    &-text
+      min-height: 7.1428rem
+      text-align: center
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.2857rem
+      line-height: 1.5rem
+
+      &--green
+        color: $Font_green
+      &--beige
+        color: $Font_beige
+      &--darkGreen
+        color: $Font_DarkGreen

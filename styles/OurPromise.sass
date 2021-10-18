@@ -1,0 +1,39 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+.promise
+  display: flex
+  justify-content: center
+
+  &__hero
+    margin-right: 4.2857rem
+    display: none
+    @media ( min-width: $mobile )
+      display: block
+    @media ( max-width: $mobile )
+      order: 1
+
+      img
+        width: 110px
+
+    &--mobile
+      display: none
+      width: 110px
+      float: right
+      margin-top: 80px
+      @media ( max-width: $mobile )
+        display: block
+        
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @media ( max-width: $mobile )
+      margin: 0 50px
+
+      .description
+        br
+          display: none
+
+    .section__title
+      margin-bottom: 3.0714rem

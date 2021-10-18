@@ -1,0 +1,81 @@
+@import './inc/_colors'
+@import './inc/_points'
+
+
+@media ( max-width: $mobile )
+  .section__discount
+    margin-top: 60px
+
+.discount
+
+  &__text
+    margin-top: 3.5714rem
+    min-height: 14.2857rem
+    background: $MainScreenBackground
+    position: relative
+    overflow: hidden
+    @media ( max-width: $mobile )
+      min-height: 98px
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &-title
+      font-family: 'EB Garamond', sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 2.5714rem
+      line-height: 3rem
+      margin-bottom: 1.5714rem
+
+      color: $Font_white
+
+      @media ( max-width: $mobile )
+        font-size: 18px
+        line-height: 18px
+
+    &-img
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      z-index: 1
+      width: 100%
+
+    &-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      z-index: 2
+
+  &__img
+
+    &-subtitle
+      font-family: 'EB Garamond', sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 2.2857rem
+      line-height: 3rem
+      text-align: center
+      margin-top: 2.2857rem
+
+      color: $Font_green
+
+      @media ( max-width: $mobile )
+        font-size: 18px
+        line-height: 18px
+        margin-top: 15px
+
+    &-cards
+      display: flex
+      justify-content: center
+      margin-top: 0.9285rem
+      img
+        width: 16.2857rem
+        height: 17.0714rem
+
+        @media ( max-width: $mobile )
+          width: 70px
+          height: 73px

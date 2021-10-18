@@ -1,0 +1,32 @@
+<div class="discount">
+  @@include('./SectionTitle.html', {
+  prifix: '',
+  sufix: 'Follow @MyMagicHealer on Instagram',
+  center: true
+  })
+
+  @@if (type === 'text') {
+  <div class="discount__text">
+    <div class="discount__text-content">
+      <h3 class="discount__text-title">And get Discount 15% for next Order</h3>
+      @@include('./Button.html', {
+      text: 'get now',
+      type: 'orange'
+      })
+    </div>
+    <img class="discount__text-img" src="./assets/discount/gasneria.png" alt="discount" loading="lazy" height="100%" />
+  </div>
+  }
+
+  @@if (type === 'img') {
+    <div class="discount__img">
+      <h2 class="discount__img-subtitle">And get Discount 15% for next Order</h2>
+      <div class="discount__img-cards">
+        <img src="./assets/discount/img1.png" alt="img" loading="lazzy" />
+        <img src="./assets/discount/img2.png" alt="img" loading="lazzy" />
+        <img src="./assets/discount/img3.png" alt="img" loading="lazzy" />
+        <img src="./assets/discount/img4.png" alt="img" loading="lazzy" />
+      </div>
+    </div>
+  }
+</div>

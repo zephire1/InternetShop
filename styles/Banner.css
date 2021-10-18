@@ -1,0 +1,51 @@
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .banner {
+    flex-direction: column;
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-img {
+    order: 1;
+    margin-top: 8px;
+  }
+}
+
+.banner__info {
+  margin-left: 3.5714rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .banner__info {
+    margin-left: unset;
+  }
+}
+
+.banner__info-title {
+  margin-bottom: 1.57135714rem;
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.4285rem;
+  line-height: 1.5714rem;
+  text-transform: capitalize;
+  color: #99A287;
+  white-space: pre-line;
+}
+
+@media (max-width: 425px) {
+  .banner__info-title {
+    font-size: 32px;
+    line-height: 27px;
+    text-align: center;
+  }
+}

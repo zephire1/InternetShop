@@ -1,0 +1,222 @@
+.BestsellersSlider {
+  margin: 3.8571rem 4.5714rem 3.5714rem;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider {
+    margin: 25px 56px 0 0;
+  }
+}
+
+.BestsellersSlider .owl-nav {
+  position: absolute;
+  top: 46%;
+  left: -21px;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider .owl-nav {
+    top: 20%;
+    left: unset;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.BestsellersSlider .owl-nav button {
+  background: radial-gradient(128.87% 2395.06% at 35.05% 0%, #99A287 5.52%, #CDAC9D 100%);
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider .owl-nav button {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.BestsellersSlider .owl-nav button:hover {
+  background: radial-gradient(128.87% 2395.06% at 35.05% 0%, #C9A641 5.52%, #CDAC9D 100%);
+}
+
+.BestsellersSlider .owl-nav button img {
+  transform: scale(0.8);
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider .owl-nav button img {
+    transform: scale(0.55);
+  }
+}
+
+.BestsellersSlider .owl-dots {
+  position: absolute;
+  bottom: 3.2142rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0.2142rem;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider .owl-dots {
+    bottom: -30px;
+  }
+}
+
+.BestsellersSlider .owl-dots button {
+  width: 0.7142rem;
+  height: 0.7142rem;
+  border-radius: 100%;
+  background: #D9D9D9 !important;
+  margin: 0 0.4285rem;
+}
+
+.BestsellersSlider .owl-dots button.active {
+  background: #4F5544 !important;
+}
+
+.BestsellersSlider__item {
+  display: flex;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.BestsellersSlider__item img {
+  max-width: 37.8571rem;
+  max-height: 37.8571rem;
+  min-width: 37.8571rem;
+  min-height: 37.8571rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 4.2857rem;
+}
+
+.BestsellersSlider__preview {
+  width: 37.8571rem;
+  height: 37.8571rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 4.2857rem;
+}
+
+@media (max-width: 768px) {
+  .BestsellersSlider__preview {
+    width: 310px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__preview {
+    width: 208px;
+    height: 212px;
+    margin-left: unset;
+  }
+}
+
+.BestsellersSlider__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 3.0714rem;
+  margin-left: 7.1428rem;
+}
+
+@media (max-width: 768px) {
+  .BestsellersSlider__info {
+    margin-left: 3.3571rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__info {
+    width: 208px;
+    margin-left: unset;
+  }
+}
+
+.BestsellersSlider__info-title {
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3.4285rem;
+  line-height: 1.5714rem;
+  color: #99A287;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__info-title {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.BestsellersSlider__info-subtitle {
+  margin-top: 1.4285rem;
+  font-family: 'Roboto', sans-serif;
+  ont-style: normal;
+  font-weight: normal;
+  font-size: 0.9285rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1857rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__info-subtitle {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.BestsellersSlider__info-reviews {
+  margin-top: 1.4285rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6428rem;
+  line-height: 0.7142rem;
+  letter-spacing: 0.0714rem;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__info-reviews {
+    font-size: 7px;
+    line-height: 10px;
+  }
+}
+
+.BestsellersSlider__info-price {
+  margin-top: 0.5714rem;
+  margin-bottom: 3.2857rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9285rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1857rem;
+  text-transform: uppercase;
+  color: #4F5544;
+}
+
+@media (max-width: 425px) {
+  .BestsellersSlider__info-price {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+}

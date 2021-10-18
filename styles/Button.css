@@ -1,0 +1,45 @@
+.btn--orange {
+  background: radial-gradient(128.87% 2395.06% at 35.05% 0%, #C9A641 5.52%, #CDAC9D 100%);
+  border-radius: 2.1428rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  line-height: 1rem;
+  text-align: center;
+  letter-spacing: 0.1714rem;
+  text-transform: uppercase;
+  color: #FFFCFC;
+  padding: 1.0714rem 4.1428rem;
+}
+
+.btn--orange:hover {
+  background: radial-gradient(128.87% 2395.06% at 35.05% 0%, #99A287 5.52%, #CDAC9D 100%);
+}
+
+.btn--orange:disabled {
+  background: #D9D9D9;
+  color: #FFFCFC;
+  cursor: no-drop;
+}
+
+.btn--orangeOutline {
+  border-radius: 2.1428rem;
+  border: 0.071rem solid #C9A641;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.5571rem;
+  line-height: 1rem;
+  text-align: center;
+  letter-spacing: 0.1714rem;
+  text-transform: uppercase;
+  color: #C9A641;
+  padding: 0.7514rem 4.1428rem;
+}
+
+.btn--orangeOutline:disabled {
+  border: 0.071rem solid #D9D9D9;
+  color: #D9D9D9;
+  cursor: no-drop;
+}

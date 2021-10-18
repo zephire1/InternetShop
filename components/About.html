@@ -1,0 +1,19 @@
+<div class="about">
+  <div class="about__info">
+    @@include('./SectionTitle.html', {
+      prifix: 'about the store',
+      sufix: 'The Story of My<br/>Magic Healer',
+      center: false
+    })
+    @@include('./DescriptionBlock.html', {
+      text: '<img style="shape-outside: url(./assets/hero/hero3.png);" class="promise__hero--mobile" src="./assets/hero/hero3.png" alt="hero2" loading="lazy" />When I was 12 years old, I used to suffer from furunculosis, a regular<br/>occurrence of abscesses. To get rid of them, I was trying different<br/>ointments prescribed by my doctor, taking antibiotics and even going<br/>through surgeries to drain the inflammation. One time, I got a big,<br/>swollen bump without any pus on my eyebrow. My grandma and I<br/>went to a doctor (once again) where he said........'
+    })
+    <div class="about__info-btn">
+      @@include('./Button.html', {
+        text: 'read more',
+        type: 'orange'
+      })
+    </div>
+  </div>
+  <div class="about__hero"><img src="./assets/hero/hero3.png" alt="hero3" loading="lazy" /></div>
+</div>

@@ -1,0 +1,19 @@
+.productsList {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.productsList__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.1428rem, 11.1428rem));
+  grid-gap: 7.1428rem 4.7857rem;
+  margin: 0 10rem;
+}
+
+@media (max-width: 425px) {
+  .productsList__list {
+    margin: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 130px));
+    grid-gap: 40px 20px;
+  }
+}
